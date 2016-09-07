@@ -20,6 +20,9 @@
 		9254C18E1D7FE4CD003AC816 /* ZHZDataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9254C18D1D7FE4CD003AC816 /* ZHZDataCache.m */; };
 		9254C1921D7FE59A003AC816 /* Keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 9254C1911D7FE59A003AC816 /* Keyboard.m */; };
 		9254C1961D7FE610003AC816 /* ZHZFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9254C1951D7FE610003AC816 /* ZHZFactory.m */; };
+		9254C19A1D7FE967003AC816 /* ZHZ_GCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9254C1991D7FE967003AC816 /* ZHZ_GCD.m */; };
+		9254C19E1D7FED10003AC816 /* ZHZPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9254C19D1D7FED10003AC816 /* ZHZPlayer.m */; };
+		9254C1A01D7FED24003AC816 /* WMPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9254C19F1D7FED24003AC816 /* WMPlayer.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,11 @@
 		9254C1911D7FE59A003AC816 /* Keyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Keyboard.m; sourceTree = "<group>"; };
 		9254C1941D7FE610003AC816 /* ZHZFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZFactory.h; sourceTree = "<group>"; };
 		9254C1951D7FE610003AC816 /* ZHZFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZFactory.m; sourceTree = "<group>"; };
+		9254C1981D7FE967003AC816 /* ZHZ_GCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZ_GCD.h; sourceTree = "<group>"; };
+		9254C1991D7FE967003AC816 /* ZHZ_GCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZ_GCD.m; sourceTree = "<group>"; };
+		9254C19C1D7FED10003AC816 /* ZHZPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZPlayer.h; sourceTree = "<group>"; };
+		9254C19D1D7FED10003AC816 /* ZHZPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZPlayer.m; sourceTree = "<group>"; };
+		9254C19F1D7FED24003AC816 /* WMPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WMPlayer.bundle; sourceTree = "<group>"; };
 		E9245B85DB0F578C52D1A40C /* Pods-ZHZPrivateLibraries.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHZPrivateLibraries.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZHZPrivateLibraries/Pods-ZHZPrivateLibraries.debug.xcconfig"; sourceTree = "<group>"; };
 		F5AB2F137930DA8FA82B9E1F /* Pods-ZHZPrivateLibraries.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHZPrivateLibraries.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZHZPrivateLibraries/Pods-ZHZPrivateLibraries.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +120,8 @@
 		9254C15E1D7FBF1E003AC816 /* ZHZPrivateLibraries */ = {
 			isa = PBXGroup;
 			children = (
+				9254C19B1D7FECFB003AC816 /* Video */,
+				9254C1971D7FE95A003AC816 /* DataTools */,
 				9254C1931D7FE5F6003AC816 /* Factory */,
 				9254C18F1D7FE59A003AC816 /* Keyboard */,
 				9254C18B1D7FE4B8003AC816 /* Datacache */,
@@ -182,6 +192,25 @@
 				9254C1951D7FE610003AC816 /* ZHZFactory.m */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		9254C1971D7FE95A003AC816 /* DataTools */ = {
+			isa = PBXGroup;
+			children = (
+				9254C1981D7FE967003AC816 /* ZHZ_GCD.h */,
+				9254C1991D7FE967003AC816 /* ZHZ_GCD.m */,
+			);
+			path = DataTools;
+			sourceTree = "<group>";
+		};
+		9254C19B1D7FECFB003AC816 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				9254C19F1D7FED24003AC816 /* WMPlayer.bundle */,
+				9254C19C1D7FED10003AC816 /* ZHZPlayer.h */,
+				9254C19D1D7FED10003AC816 /* ZHZPlayer.m */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 		EE2AB887BF89F3F8C766FAC4 /* Pods */ = {
@@ -279,6 +308,7 @@
 				9254C16F1D7FBF1E003AC816 /* LaunchScreen.storyboard in Resources */,
 				9254C16C1D7FBF1E003AC816 /* Assets.xcassets in Resources */,
 				9254C1851D7FBF53003AC816 /* Podfile in Resources */,
+				9254C1A01D7FED24003AC816 /* WMPlayer.bundle in Resources */,
 				9254C16A1D7FBF1E003AC816 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,8 +380,10 @@
 				9254C1921D7FE59A003AC816 /* Keyboard.m in Sources */,
 				9254C18E1D7FE4CD003AC816 /* ZHZDataCache.m in Sources */,
 				9254C1881D7FC025003AC816 /* ZHZTools.m in Sources */,
+				9254C19A1D7FE967003AC816 /* ZHZ_GCD.m in Sources */,
 				9254C1961D7FE610003AC816 /* ZHZFactory.m in Sources */,
 				9254C1611D7FBF1E003AC816 /* main.m in Sources */,
+				9254C19E1D7FED10003AC816 /* ZHZPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

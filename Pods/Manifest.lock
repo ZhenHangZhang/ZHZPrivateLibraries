@@ -20,13 +20,19 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - iCarousel (1.8.2)
+  - Masonry (1.0.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.6.2)
+  - iCarousel
+  - Masonry
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  iCarousel: 67c8a43da5a46795b56aadfc96cd36a16f6149b2
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
 
-PODFILE CHECKSUM: dc6668a83413b0f6a049cc9a8f3e63c90c7589d7
+PODFILE CHECKSUM: a7572f9b7ad6601d7072a6ff151a15a24ff9c1d4
 
 COCOAPODS: 1.1.0.beta.1
