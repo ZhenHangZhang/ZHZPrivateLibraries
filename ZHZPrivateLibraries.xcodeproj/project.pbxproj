@@ -17,6 +17,9 @@
 		9254C17A1D7FBF1E003AC816 /* ZHZPrivateLibrariesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9254C1791D7FBF1E003AC816 /* ZHZPrivateLibrariesTests.m */; };
 		9254C1851D7FBF53003AC816 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9254C1841D7FBF53003AC816 /* Podfile */; };
 		9254C1881D7FC025003AC816 /* ZHZTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 9254C1871D7FC025003AC816 /* ZHZTools.m */; };
+		9254C18E1D7FE4CD003AC816 /* ZHZDataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9254C18D1D7FE4CD003AC816 /* ZHZDataCache.m */; };
+		9254C1921D7FE59A003AC816 /* Keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 9254C1911D7FE59A003AC816 /* Keyboard.m */; };
+		9254C1961D7FE610003AC816 /* ZHZFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9254C1951D7FE610003AC816 /* ZHZFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,12 @@
 		9254C1861D7FC025003AC816 /* ZHZTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHZTools.h; path = ../ZHZTools.h; sourceTree = "<group>"; };
 		9254C1871D7FC025003AC816 /* ZHZTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHZTools.m; path = ../ZHZTools.m; sourceTree = "<group>"; };
 		9254C18A1D7FC0DA003AC816 /* ZHZHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHZHeader.h; sourceTree = "<group>"; };
+		9254C18C1D7FE4CD003AC816 /* ZHZDataCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZDataCache.h; sourceTree = "<group>"; };
+		9254C18D1D7FE4CD003AC816 /* ZHZDataCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZDataCache.m; sourceTree = "<group>"; };
+		9254C1901D7FE59A003AC816 /* Keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keyboard.h; sourceTree = "<group>"; };
+		9254C1911D7FE59A003AC816 /* Keyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Keyboard.m; sourceTree = "<group>"; };
+		9254C1941D7FE610003AC816 /* ZHZFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZFactory.h; sourceTree = "<group>"; };
+		9254C1951D7FE610003AC816 /* ZHZFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZFactory.m; sourceTree = "<group>"; };
 		E9245B85DB0F578C52D1A40C /* Pods-ZHZPrivateLibraries.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHZPrivateLibraries.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZHZPrivateLibraries/Pods-ZHZPrivateLibraries.debug.xcconfig"; sourceTree = "<group>"; };
 		F5AB2F137930DA8FA82B9E1F /* Pods-ZHZPrivateLibraries.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHZPrivateLibraries.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZHZPrivateLibraries/Pods-ZHZPrivateLibraries.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +112,9 @@
 		9254C15E1D7FBF1E003AC816 /* ZHZPrivateLibraries */ = {
 			isa = PBXGroup;
 			children = (
+				9254C1931D7FE5F6003AC816 /* Factory */,
+				9254C18F1D7FE59A003AC816 /* Keyboard */,
+				9254C18B1D7FE4B8003AC816 /* Datacache */,
 				9254C1891D7FC04E003AC816 /* Tools */,
 				9254C1621D7FBF1E003AC816 /* AppDelegate.h */,
 				9254C1631D7FBF1E003AC816 /* AppDelegate.m */,
@@ -142,6 +154,34 @@
 				9254C1871D7FC025003AC816 /* ZHZTools.m */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		9254C18B1D7FE4B8003AC816 /* Datacache */ = {
+			isa = PBXGroup;
+			children = (
+				9254C18C1D7FE4CD003AC816 /* ZHZDataCache.h */,
+				9254C18D1D7FE4CD003AC816 /* ZHZDataCache.m */,
+			);
+			path = Datacache;
+			sourceTree = "<group>";
+		};
+		9254C18F1D7FE59A003AC816 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9254C1901D7FE59A003AC816 /* Keyboard.h */,
+				9254C1911D7FE59A003AC816 /* Keyboard.m */,
+			);
+			name = Keyboard;
+			path = keyboard;
+			sourceTree = "<group>";
+		};
+		9254C1931D7FE5F6003AC816 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				9254C1941D7FE610003AC816 /* ZHZFactory.h */,
+				9254C1951D7FE610003AC816 /* ZHZFactory.m */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 		EE2AB887BF89F3F8C766FAC4 /* Pods */ = {
@@ -307,7 +347,10 @@
 			files = (
 				9254C1671D7FBF1E003AC816 /* ViewController.m in Sources */,
 				9254C1641D7FBF1E003AC816 /* AppDelegate.m in Sources */,
+				9254C1921D7FE59A003AC816 /* Keyboard.m in Sources */,
+				9254C18E1D7FE4CD003AC816 /* ZHZDataCache.m in Sources */,
 				9254C1881D7FC025003AC816 /* ZHZTools.m in Sources */,
+				9254C1961D7FE610003AC816 /* ZHZFactory.m in Sources */,
 				9254C1611D7FBF1E003AC816 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

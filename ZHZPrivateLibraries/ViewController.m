@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "ZHZTools.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    if ([ZHZTools isPhoneNumber:@"13323819717"]) {
+        NSLog(@"这是一个手机号");
+    }
+
 }
 
 - (void)didReceiveMemoryWarning {
