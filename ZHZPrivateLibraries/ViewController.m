@@ -10,6 +10,8 @@
 #import "ZHZTools.h"
 #import "ZHZCustomAlertView.h"
 #import "ZHZInfoGuidView.h"
+#import "ZHZImageCustom.h"
+#import "ZHZAlertController.h"
 
 
 static NSString * const sampleDescription1 = @"这是你大爷.";
@@ -22,11 +24,28 @@ static NSString * const sampleDescription4 = @"这是你四大爷.";
     UIView *rootView;
     ZHZInfoGuidView *_intro;
 }
+@property (weak, nonatomic) IBOutlet UIImageView *imgV;
 
 @end
 
 @implementation ViewController
+
+
+-(UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleDefault;
+}
+
 - (IBAction)tan:(id)sender {
+    /**
+     
+     [ZHZAlertController showInViewController:self withTitle:@"提示" message:@"啧啧" preferredStyle:UIAlertControllerStyleAlert cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@[@"1",@"2",@"3"] popoverPresentationControllerBlock:^(UIPopoverPresentationController * _Nonnull popover) {
+     NSLog(@"popover ==>%@",popover);
+     } tapBlock:^(UIAlertController * _Nonnull controller, UIAlertAction * _Nonnull action, NSInteger buttonIndex) {
+     NSLog(@"%ld",buttonIndex);
+     
+     }];
+     */
     ZHZCustomAlertView * alertView = [[ZHZCustomAlertView alloc] initWithTitle:@"弹窗" message:@"这是我自己定义的弹窗" cancelButtonTitle:@"取消" otherButtonTitle:@"OK"];
     alertView.delegate = self;
     alertView.shouldDismissOnOutsideTapped = YES;
@@ -35,13 +54,15 @@ static NSString * const sampleDescription4 = @"这是你四大爷.";
     alertView.appearTime = 1;
     alertView.disappearTime = 1;
     [alertView show];
-}
+   }
 - (void)viewDidLoad {
     [super viewDidLoad];
     rootView = self.navigationController.view;
     if ([ZHZTools isPhoneNumber:@"17823819717"]) {
         NSLog(@"这是一个手机号");
     }
+    self.imgV.image = [ZHZImageCustom resizeImage:[UIImage imageNamed:@"bg2"] toSize:self.imgV.frame.size contentMode:UIViewContentModeScaleToFill];
+//    self.imgV.image = [ZHZImageCustom blurredImage:[UIImage imageNamed:@"title1"] radius:0.2];
 }
 - (void)showIntroWithCustomView {
     ZHZInfoPage *page1 = [ZHZInfoPage page];

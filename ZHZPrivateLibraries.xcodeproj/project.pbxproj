@@ -42,6 +42,11 @@
 		9254C1CB1D800D44003AC816 /* title2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9254C1BC1D800D44003AC816 /* title2@2x.png */; };
 		9254C1CC1D800D44003AC816 /* title3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9254C1BD1D800D44003AC816 /* title3@2x.png */; };
 		9254C1CD1D800D44003AC816 /* title4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9254C1BE1D800D44003AC816 /* title4@2x.png */; };
+		9255CA8F1D810B85006A6A24 /* ZHZObjectTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9255CA8E1D810B85006A6A24 /* ZHZObjectTransformer.m */; };
+		9255CA931D812A57006A6A24 /* ZHZImageCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9255CA921D812A57006A6A24 /* ZHZImageCustom.m */; };
+		9255CA961D814D1C006A6A24 /* ZHZBaseNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9255CA951D814D1C006A6A24 /* ZHZBaseNavViewController.m */; };
+		9255CA9C1D81530B006A6A24 /* DownDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9255CA9B1D81530B006A6A24 /* DownDataTool.m */; };
+		9255CA9F1D815498006A6A24 /* ZHZAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9255CA9E1D815498006A6A24 /* ZHZAlertController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +112,16 @@
 		9254C1BC1D800D44003AC816 /* title2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title2@2x.png"; sourceTree = "<group>"; };
 		9254C1BD1D800D44003AC816 /* title3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title3@2x.png"; sourceTree = "<group>"; };
 		9254C1BE1D800D44003AC816 /* title4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title4@2x.png"; sourceTree = "<group>"; };
+		9255CA8D1D810B85006A6A24 /* ZHZObjectTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZObjectTransformer.h; sourceTree = "<group>"; };
+		9255CA8E1D810B85006A6A24 /* ZHZObjectTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZObjectTransformer.m; sourceTree = "<group>"; };
+		9255CA911D812A57006A6A24 /* ZHZImageCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZImageCustom.h; sourceTree = "<group>"; };
+		9255CA921D812A57006A6A24 /* ZHZImageCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZImageCustom.m; sourceTree = "<group>"; };
+		9255CA941D814D1C006A6A24 /* ZHZBaseNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZBaseNavViewController.h; sourceTree = "<group>"; };
+		9255CA951D814D1C006A6A24 /* ZHZBaseNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZBaseNavViewController.m; sourceTree = "<group>"; };
+		9255CA9A1D81530B006A6A24 /* DownDataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownDataTool.h; sourceTree = "<group>"; };
+		9255CA9B1D81530B006A6A24 /* DownDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownDataTool.m; sourceTree = "<group>"; };
+		9255CA9D1D815498006A6A24 /* ZHZAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZAlertController.h; sourceTree = "<group>"; };
+		9255CA9E1D815498006A6A24 /* ZHZAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZAlertController.m; sourceTree = "<group>"; };
 		E9245B85DB0F578C52D1A40C /* Pods-ZHZPrivateLibraries.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHZPrivateLibraries.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZHZPrivateLibraries/Pods-ZHZPrivateLibraries.debug.xcconfig"; sourceTree = "<group>"; };
 		F5AB2F137930DA8FA82B9E1F /* Pods-ZHZPrivateLibraries.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHZPrivateLibraries.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZHZPrivateLibraries/Pods-ZHZPrivateLibraries.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,6 +177,8 @@
 		9254C15E1D7FBF1E003AC816 /* ZHZPrivateLibraries */ = {
 			isa = PBXGroup;
 			children = (
+				9255CA901D8129DB006A6A24 /* ZHZImageView */,
+				9255CA8C1D810B6D006A6A24 /* ObjectTransformer */,
 				9254C1A51D800280003AC816 /* GuidView */,
 				9254C1A11D7FF4EE003AC816 /* CustomAlert */,
 				9254C19B1D7FECFB003AC816 /* Video */,
@@ -172,6 +189,8 @@
 				9254C1891D7FC04E003AC816 /* Tools */,
 				9254C1621D7FBF1E003AC816 /* AppDelegate.h */,
 				9254C1631D7FBF1E003AC816 /* AppDelegate.m */,
+				9255CA941D814D1C006A6A24 /* ZHZBaseNavViewController.h */,
+				9255CA951D814D1C006A6A24 /* ZHZBaseNavViewController.m */,
 				9254C1651D7FBF1E003AC816 /* ViewController.h */,
 				9254C1661D7FBF1E003AC816 /* ViewController.m */,
 				9254C1681D7FBF1E003AC816 /* Main.storyboard */,
@@ -244,6 +263,8 @@
 			children = (
 				9254C1981D7FE967003AC816 /* ZHZ_GCD.h */,
 				9254C1991D7FE967003AC816 /* ZHZ_GCD.m */,
+				9255CA9A1D81530B006A6A24 /* DownDataTool.h */,
+				9255CA9B1D81530B006A6A24 /* DownDataTool.m */,
 			);
 			path = DataTools;
 			sourceTree = "<group>";
@@ -263,6 +284,8 @@
 			children = (
 				9254C1A21D7FF50C003AC816 /* ZHZCustomAlertView.h */,
 				9254C1A31D7FF50C003AC816 /* ZHZCustomAlertView.m */,
+				9255CA9D1D815498006A6A24 /* ZHZAlertController.h */,
+				9255CA9E1D815498006A6A24 /* ZHZAlertController.m */,
 			);
 			path = CustomAlert;
 			sourceTree = "<group>";
@@ -300,6 +323,24 @@
 				9254C1BE1D800D44003AC816 /* title4@2x.png */,
 			);
 			path = resource;
+			sourceTree = "<group>";
+		};
+		9255CA8C1D810B6D006A6A24 /* ObjectTransformer */ = {
+			isa = PBXGroup;
+			children = (
+				9255CA8D1D810B85006A6A24 /* ZHZObjectTransformer.h */,
+				9255CA8E1D810B85006A6A24 /* ZHZObjectTransformer.m */,
+			);
+			path = ObjectTransformer;
+			sourceTree = "<group>";
+		};
+		9255CA901D8129DB006A6A24 /* ZHZImageView */ = {
+			isa = PBXGroup;
+			children = (
+				9255CA911D812A57006A6A24 /* ZHZImageCustom.h */,
+				9255CA921D812A57006A6A24 /* ZHZImageCustom.m */,
+			);
+			path = ZHZImageView;
 			sourceTree = "<group>";
 		};
 		EE2AB887BF89F3F8C766FAC4 /* Pods */ = {
@@ -479,18 +520,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9255CA961D814D1C006A6A24 /* ZHZBaseNavViewController.m in Sources */,
 				9254C1671D7FBF1E003AC816 /* ViewController.m in Sources */,
 				9254C1641D7FBF1E003AC816 /* AppDelegate.m in Sources */,
 				9254C1921D7FE59A003AC816 /* Keyboard.m in Sources */,
 				9254C18E1D7FE4CD003AC816 /* ZHZDataCache.m in Sources */,
 				9254C1AB1D80054F003AC816 /* ZHZInfoGuidView.m in Sources */,
+				9255CA9C1D81530B006A6A24 /* DownDataTool.m in Sources */,
 				9254C1881D7FC025003AC816 /* ZHZTools.m in Sources */,
 				9254C1A41D7FF50C003AC816 /* ZHZCustomAlertView.m in Sources */,
+				9255CA8F1D810B85006A6A24 /* ZHZObjectTransformer.m in Sources */,
 				9254C19A1D7FE967003AC816 /* ZHZ_GCD.m in Sources */,
 				9254C1AE1D80058A003AC816 /* ZHZInfoGuidScrollView.m in Sources */,
 				9254C1961D7FE610003AC816 /* ZHZFactory.m in Sources */,
+				9255CA9F1D815498006A6A24 /* ZHZAlertController.m in Sources */,
 				9254C1A81D80051B003AC816 /* ZHZInfoPage.m in Sources */,
 				9254C1611D7FBF1E003AC816 /* main.m in Sources */,
+				9255CA931D812A57006A6A24 /* ZHZImageCustom.m in Sources */,
 				9254C19E1D7FED10003AC816 /* ZHZPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -620,6 +666,7 @@
 			baseConfigurationReference = E9245B85DB0F578C52D1A40C /* Pods-ZHZPrivateLibraries.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ZHZPrivateLibraries/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -633,6 +680,7 @@
 			baseConfigurationReference = F5AB2F137930DA8FA82B9E1F /* Pods-ZHZPrivateLibraries.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ZHZPrivateLibraries/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -65,6 +65,13 @@
  */
 + (NSString *)dateStringFromNumberTimer:(NSString *)timerStr;
 
+/**
+ 将日期格式化成字符串
+ 支持格式:http://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html#Date_Format_Patterns
+ @param format 格式，例如 @"yyyy-MM-dd HH:mm:ss"
+ */
++ (NSString *)stringWithDate:(NSDate *)date format:(NSString *)format;
+
 #pragma mark -判断处理-
 /**
  *  手机号判断
@@ -114,5 +121,18 @@
  *  @return 是否？？？？？
  */
 +(BOOL)isHanWord:(NSString*)str;
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end

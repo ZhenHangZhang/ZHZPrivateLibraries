@@ -80,6 +80,14 @@ static const NSTimeInterval oneDay = 24 * 60 * 60;
     //转化为 时间字符串
     return [df stringFromDate:date];
 }
++ (NSString *)stringWithDate:(NSDate *)date format:(NSString *)format{
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:format];
+    [formatter setLocale:[NSLocale currentLocale]];
+    return [formatter stringFromDate:date];
+    
+}
 +(BOOL)isPhoneNumber:(NSString*)num{
     NSString * MOBILE = @"^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$";
     NSPredicate *regextestmobile = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", MOBILE];
