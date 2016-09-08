@@ -12,7 +12,8 @@
 #import "ZHZInfoGuidView.h"
 #import "ZHZImageCustom.h"
 #import "ZHZAlertController.h"
-
+#import "DownDataTool.h"
+#import "ZHZObjectTransformer.h"
 
 static NSString * const sampleDescription1 = @"这是你大爷.";
 static NSString * const sampleDescription2 = @"这是你二大爷.";
@@ -46,6 +47,31 @@ static NSString * const sampleDescription4 = @"这是你四大爷.";
      
      }];
      */
+    
+    NSString *urlStr = @"http://b2c.ezparking.com.cn/rtpi-service/misc/token.do?deviceId=86bcc88b562210ccd5e68221ee9121ec26fed2f9&app=com.ezparking.ios.qibutingche&version=1";
+    urlStr = [urlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    [DownDataTool getUrl:urlStr params:nil success:^(id data) {
+        NSLog(@"%@",data);
+//        self.imgV.image = [ZHZObjectTransformer data2image:data];
+        
+        NSArray *arr = [ZHZObjectTransformer data2array:data];
+        
+        NSDictionary *dic = [ZHZObjectTransformer JSONdata2dictionary:data];
+        NSLog(@"%@",dic);
+
+        
+    } fail:^(NSError *error) {
+        
+        NSLog(@"%@",error);
+        
+        NSHTTPURLResponse *respon = error.userInfo[@"com.alamofire.serialization.response.error.response"];
+        NSLog(@"%@",respon.allHeaderFields);
+        NSString *msg = [respon.allHeaderFields[@"Message"] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        NSLog(@"%@",msg);
+    }];
+    
+    return;
+    
     ZHZCustomAlertView * alertView = [[ZHZCustomAlertView alloc] initWithTitle:@"弹窗" message:@"这是我自己定义的弹窗" cancelButtonTitle:@"取消" otherButtonTitle:@"OK"];
     alertView.delegate = self;
     alertView.shouldDismissOnOutsideTapped = YES;
@@ -61,7 +87,7 @@ static NSString * const sampleDescription4 = @"这是你四大爷.";
     if ([ZHZTools isPhoneNumber:@"17823819717"]) {
         NSLog(@"这是一个手机号");
     }
-    self.imgV.image = [ZHZImageCustom resizeImage:[UIImage imageNamed:@"bg2"] toSize:self.imgV.frame.size contentMode:UIViewContentModeScaleToFill];
+//    self.imgV.image = [ZHZImageCustom resizeImage:[UIImage imageNamed:@"bg2"] toSize:self.imgV.frame.size contentMode:UIViewContentModeScaleToFill];
 //    self.imgV.image = [ZHZImageCustom blurredImage:[UIImage imageNamed:@"title1"] radius:0.2];
 }
 - (void)showIntroWithCustomView {

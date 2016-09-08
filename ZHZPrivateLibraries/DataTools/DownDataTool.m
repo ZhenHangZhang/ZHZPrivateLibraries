@@ -67,13 +67,10 @@
 +(void)getUrl:(NSString*)url params:(NSDictionary*)params success:(CompleteBlock_t)successBlock fail:(ErrorBlock_t)Failerror{
     //    __weak typeof(self)weakSelf = self;
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html",@"text/json",nil];
+//    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html",@"text/json",nil];
     
-    if ([url rangeOfString:@"period"].location != NSNotFound) {
-        manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-    }else{
-        manager.responseSerializer = [AFJSONResponseSerializer serializer];
-    }
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+ 
     manager.requestSerializer.timeoutInterval = 15;
     [manager GET:url parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
         
