@@ -47,6 +47,10 @@
 		9255CA961D814D1C006A6A24 /* ZHZBaseNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9255CA951D814D1C006A6A24 /* ZHZBaseNavViewController.m */; };
 		9255CA9C1D81530B006A6A24 /* DownDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9255CA9B1D81530B006A6A24 /* DownDataTool.m */; };
 		9255CA9F1D815498006A6A24 /* ZHZAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9255CA9E1D815498006A6A24 /* ZHZAlertController.m */; };
+		925A1DA31D825D3E00E243C9 /* ZHZCustomGuidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 925A1DA21D825D3E00E243C9 /* ZHZCustomGuidViewController.m */; };
+		925A1DA71D825E8B00E243C9 /* UIView+Categroy.m in Sources */ = {isa = PBXBuildFile; fileRef = 925A1DA61D825E8B00E243C9 /* UIView+Categroy.m */; };
+		925A1DAD1D82A06900E243C9 /* ZHZPaintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 925A1DAC1D82A06900E243C9 /* ZHZPaintView.m */; };
+		925A1DB01D82A11000E243C9 /* UIImage+ZHZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 925A1DAF1D82A11000E243C9 /* UIImage+ZHZCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +126,14 @@
 		9255CA9B1D81530B006A6A24 /* DownDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownDataTool.m; sourceTree = "<group>"; };
 		9255CA9D1D815498006A6A24 /* ZHZAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZAlertController.h; sourceTree = "<group>"; };
 		9255CA9E1D815498006A6A24 /* ZHZAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZAlertController.m; sourceTree = "<group>"; };
+		925A1DA11D825D3E00E243C9 /* ZHZCustomGuidViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZCustomGuidViewController.h; sourceTree = "<group>"; };
+		925A1DA21D825D3E00E243C9 /* ZHZCustomGuidViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZCustomGuidViewController.m; sourceTree = "<group>"; };
+		925A1DA51D825E8B00E243C9 /* UIView+Categroy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Categroy.h"; sourceTree = "<group>"; };
+		925A1DA61D825E8B00E243C9 /* UIView+Categroy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Categroy.m"; sourceTree = "<group>"; };
+		925A1DAB1D82A06900E243C9 /* ZHZPaintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZPaintView.h; sourceTree = "<group>"; };
+		925A1DAC1D82A06900E243C9 /* ZHZPaintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZPaintView.m; sourceTree = "<group>"; };
+		925A1DAE1D82A11000E243C9 /* UIImage+ZHZCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZHZCategory.h"; sourceTree = "<group>"; };
+		925A1DAF1D82A11000E243C9 /* UIImage+ZHZCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZHZCategory.m"; sourceTree = "<group>"; };
 		E9245B85DB0F578C52D1A40C /* Pods-ZHZPrivateLibraries.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHZPrivateLibraries.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZHZPrivateLibraries/Pods-ZHZPrivateLibraries.debug.xcconfig"; sourceTree = "<group>"; };
 		F5AB2F137930DA8FA82B9E1F /* Pods-ZHZPrivateLibraries.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHZPrivateLibraries.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZHZPrivateLibraries/Pods-ZHZPrivateLibraries.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,6 +189,8 @@
 		9254C15E1D7FBF1E003AC816 /* ZHZPrivateLibraries */ = {
 			isa = PBXGroup;
 			children = (
+				925A1DAA1D82A03400E243C9 /* PaintView */,
+				925A1DA41D825E3500E243C9 /* Category */,
 				9255CA901D8129DB006A6A24 /* ZHZImageView */,
 				9255CA8C1D810B6D006A6A24 /* ObjectTransformer */,
 				9254C1A51D800280003AC816 /* GuidView */,
@@ -299,6 +313,8 @@
 				9254C1AA1D80054F003AC816 /* ZHZInfoGuidView.m */,
 				9254C1AC1D80058A003AC816 /* ZHZInfoGuidScrollView.h */,
 				9254C1AD1D80058A003AC816 /* ZHZInfoGuidScrollView.m */,
+				925A1DA11D825D3E00E243C9 /* ZHZCustomGuidViewController.h */,
+				925A1DA21D825D3E00E243C9 /* ZHZCustomGuidViewController.m */,
 			);
 			path = GuidView;
 			sourceTree = "<group>";
@@ -341,6 +357,27 @@
 				9255CA921D812A57006A6A24 /* ZHZImageCustom.m */,
 			);
 			path = ZHZImageView;
+			sourceTree = "<group>";
+		};
+		925A1DA41D825E3500E243C9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				925A1DA51D825E8B00E243C9 /* UIView+Categroy.h */,
+				925A1DA61D825E8B00E243C9 /* UIView+Categroy.m */,
+				925A1DAE1D82A11000E243C9 /* UIImage+ZHZCategory.h */,
+				925A1DAF1D82A11000E243C9 /* UIImage+ZHZCategory.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		925A1DAA1D82A03400E243C9 /* PaintView */ = {
+			isa = PBXGroup;
+			children = (
+				925A1DAB1D82A06900E243C9 /* ZHZPaintView.h */,
+				925A1DAC1D82A06900E243C9 /* ZHZPaintView.m */,
+			);
+			name = PaintView;
+			path = "签名版";
 			sourceTree = "<group>";
 		};
 		EE2AB887BF89F3F8C766FAC4 /* Pods */ = {
@@ -527,16 +564,20 @@
 				9254C18E1D7FE4CD003AC816 /* ZHZDataCache.m in Sources */,
 				9254C1AB1D80054F003AC816 /* ZHZInfoGuidView.m in Sources */,
 				9255CA9C1D81530B006A6A24 /* DownDataTool.m in Sources */,
+				925A1DAD1D82A06900E243C9 /* ZHZPaintView.m in Sources */,
 				9254C1881D7FC025003AC816 /* ZHZTools.m in Sources */,
 				9254C1A41D7FF50C003AC816 /* ZHZCustomAlertView.m in Sources */,
 				9255CA8F1D810B85006A6A24 /* ZHZObjectTransformer.m in Sources */,
+				925A1DA71D825E8B00E243C9 /* UIView+Categroy.m in Sources */,
 				9254C19A1D7FE967003AC816 /* ZHZ_GCD.m in Sources */,
 				9254C1AE1D80058A003AC816 /* ZHZInfoGuidScrollView.m in Sources */,
 				9254C1961D7FE610003AC816 /* ZHZFactory.m in Sources */,
 				9255CA9F1D815498006A6A24 /* ZHZAlertController.m in Sources */,
 				9254C1A81D80051B003AC816 /* ZHZInfoPage.m in Sources */,
 				9254C1611D7FBF1E003AC816 /* main.m in Sources */,
+				925A1DB01D82A11000E243C9 /* UIImage+ZHZCategory.m in Sources */,
 				9255CA931D812A57006A6A24 /* ZHZImageCustom.m in Sources */,
+				925A1DA31D825D3E00E243C9 /* ZHZCustomGuidViewController.m in Sources */,
 				9254C19E1D7FED10003AC816 /* ZHZPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

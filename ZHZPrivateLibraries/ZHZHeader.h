@@ -20,7 +20,7 @@
 // 是否为机型iPhone5
 #define IS_IPHONE5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
 // 是否为系统版本iOS7
-#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+#define iOS7    ([[UIDevice currentDevice].systemVersion doubleValue] > 7.0)
 //数据储存
 #define ZHZUserDefaults [NSUserDefaults standardUserDefaults]
 //解决循环引用的问题
