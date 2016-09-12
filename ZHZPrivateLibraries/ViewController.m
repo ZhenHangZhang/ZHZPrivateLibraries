@@ -15,6 +15,7 @@
 #import "DownDataTool.h"
 #import "ZHZObjectTransformer.h"
 #import "ZHZCustomGuidViewController.h"
+#import "ZHZPregressButton.h"
 static NSString * const sampleDescription1 = @"这是你大爷.";
 static NSString * const sampleDescription2 = @"这是你二大爷.";
 static NSString * const sampleDescription3 = @"这是你三大爷.";
@@ -24,6 +25,7 @@ static NSString * const sampleDescription4 = @"这是你四大爷.";
 {
     UIView *rootView;
     ZHZInfoGuidView *_intro;
+    ZHZPregressButton*bV;
 }
 @property (weak, nonatomic) IBOutlet UIImageView *imgV;
 
@@ -41,6 +43,7 @@ static NSString * const sampleDescription4 = @"这是你四大爷.";
     [self.navigationController pushViewController:vc animated:YES];
 }
 - (IBAction)next:(id)sender {
+    
 }
 
 
@@ -94,7 +97,13 @@ static NSString * const sampleDescription4 = @"这是你四大爷.";
    }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    bV = [[ZHZPregressButton alloc]initWithFrame:CGRectMake(0, 300, 100, 40)];
+    [self.view addSubview:bV];
     
+    bV.progress = 0.1;
+    
+    [bV addTarget:self action:@selector(add) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:bV];
     self.title = @"这是一个测试";
     rootView = self.navigationController.view;
     if ([ZHZTools isPhoneNumber:@"17823819717"]) {
@@ -178,5 +187,12 @@ static NSString * const sampleDescription4 = @"这是你四大爷.";
 
     [self showIntroWithCustomView];
 }
+-(void)add{
 
+    static float NUM = 0.1;
+    NUM += 0.1;
+    
+    [bV setProgress:NUM  animated:YES];
+
+}
 @end
