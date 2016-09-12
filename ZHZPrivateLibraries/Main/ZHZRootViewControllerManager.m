@@ -10,7 +10,7 @@
 #import "ZHZRootViewControllerManager.h"
 #import "ZHZCustomGuidViewController.h"
 #import "UIImage+ZHZCategory.h"
-
+#import "ZHZTabBarVC.h"
 
 @implementation ZHZRootViewControllerManager
 
@@ -42,7 +42,7 @@
     
     __weak typeof(self) _self = self;
     ZHZCustomGuidViewController * newfeature = [ZHZCustomGuidViewController new];
-    newfeature.newfeatureImages = @[@"1",@"2",@"3",@"4"];
+    newfeature.newfeatureImages = @[@"bg1",@"bg2",@"bg3",@"bg4"];
     newfeature.enterButtonImage = [UIImage imageWithColor:[UIColor clearColor]];
     newfeature.block = ^{
         _self.window.rootViewController = [self getTabbarController];
@@ -51,8 +51,7 @@
 }
 
 - (UITabBarController *)getTabbarController {
-    
-    return [[UITabBarController alloc]init];
+    return [[ZHZTabBarVC alloc]init];
     
 }
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ZHZRootViewControllerManager.h"
+
 
 @interface AppDelegate ()
 
@@ -16,7 +18,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [ZHZRootViewControllerManager manager].window = self.window ;
+    [self.window makeKeyWindow];
+    
+    
     return YES;
 }
 

@@ -13,6 +13,8 @@
 
 
 @interface ZHZRootViewControllerManager : NSObject
+
+
 @property (nonatomic,strong) UIWindow * window;
 
 + (instancetype)manager;

@@ -14,19 +14,24 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
   - iCarousel (1.8.2)
   - Masonry (1.0.1)
 
 DEPENDENCIES:
   - AFNetworking
+  - FMDB
   - iCarousel
   - Masonry
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   iCarousel: 67c8a43da5a46795b56aadfc96cd36a16f6149b2
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
 
-PODFILE CHECKSUM: ee345474e18cad4a40c3c9c5a3159a56385ac832
+PODFILE CHECKSUM: fe0a285c9f82db8ed29c166b505f3d60eab6fc49
 
 COCOAPODS: 1.1.0.beta.1

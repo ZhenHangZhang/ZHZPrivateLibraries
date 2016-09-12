@@ -14,6 +14,12 @@ typedef void (^ZHZWhenTappedBlock)();
 
 @interface UIView (Categroy)<UIGestureRecognizerDelegate>
 
+@property (nonatomic, assign) CGSize size;
+@property (nonatomic, assign) CGFloat width;
+@property (nonatomic, assign) CGFloat height;
+@property (nonatomic, assign) CGFloat x;
+@property (nonatomic, assign) CGFloat y;
+
 /**
  *  X
  *
@@ -70,6 +76,15 @@ typedef void (^ZHZWhenTappedBlock)();
  */
 
 - (CGFloat)height;
+
+
+
+
+
+
+
+
+
 
 /**
  *  移除View中的所有子视图
