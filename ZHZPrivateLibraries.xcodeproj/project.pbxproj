@@ -62,6 +62,7 @@
 		926EBD661D87E29C003AA841 /* ZHZImageScrollViewLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 926EBD651D87E29C003AA841 /* ZHZImageScrollViewLoop.m */; };
 		926EBD6A1D87E82C003AA841 /* ZHZDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 926EBD691D87E82C003AA841 /* ZHZDropDownMenu.m */; };
 		926EBD6C1D87E900003AA841 /* ico_make.png in Resources */ = {isa = PBXBuildFile; fileRef = 926EBD6B1D87E900003AA841 /* ico_make.png */; };
+		926EBD701D87EC20003AA841 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 926EBD6F1D87EC20003AA841 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		929493751D868D7F00CE1E74 /* ZHZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 929493721D868D7F00CE1E74 /* ZHZTabBar.m */; };
 		929493761D868D7F00CE1E74 /* ZHZTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 929493741D868D7F00CE1E74 /* ZHZTabBarVC.m */; };
 		929493F41D86934400CE1E74 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 929493791D86934400CE1E74 /* Contents.json */; };
@@ -263,6 +264,8 @@
 		926EBD681D87E82C003AA841 /* ZHZDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZDropDownMenu.h; sourceTree = "<group>"; };
 		926EBD691D87E82C003AA841 /* ZHZDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZDropDownMenu.m; sourceTree = "<group>"; };
 		926EBD6B1D87E900003AA841 /* ico_make.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_make.png; sourceTree = "<group>"; };
+		926EBD6E1D87EC20003AA841 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		926EBD6F1D87EC20003AA841 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		929493711D868D7F00CE1E74 /* ZHZTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZTabBar.h; sourceTree = "<group>"; };
 		929493721D868D7F00CE1E74 /* ZHZTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZTabBar.m; sourceTree = "<group>"; };
 		929493731D868D7F00CE1E74 /* ZHZTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZTabBarVC.h; sourceTree = "<group>"; };
@@ -430,6 +433,7 @@
 		9254C15E1D7FBF1E003AC816 /* ZHZPrivateLibraries */ = {
 			isa = PBXGroup;
 			children = (
+				926EBD6D1D87EC20003AA841 /* FDFullscreenPopGesture */,
 				926EBD671D87E7F2003AA841 /* DropDownMenu */,
 				926EBD631D87E286003AA841 /* ImageLoopView */,
 				926EBD5F1D87DD73003AA841 /* MJRefreshHeader */,
@@ -695,6 +699,15 @@
 				926EBD691D87E82C003AA841 /* ZHZDropDownMenu.m */,
 			);
 			path = DropDownMenu;
+			sourceTree = "<group>";
+		};
+		926EBD6D1D87EC20003AA841 /* FDFullscreenPopGesture */ = {
+			isa = PBXGroup;
+			children = (
+				926EBD6E1D87EC20003AA841 /* UINavigationController+FDFullscreenPopGesture.h */,
+				926EBD6F1D87EC20003AA841 /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = FDFullscreenPopGesture;
 			sourceTree = "<group>";
 		};
 		929493701D868D5E00CE1E74 /* tabBarVC */ = {
@@ -1464,6 +1477,7 @@
 				9294946D1D86A4C800CE1E74 /* UIImage+MDQRCode.m in Sources */,
 				929494651D86A4C800CE1E74 /* QRCScannerViewController.m in Sources */,
 				9254C1921D7FE59A003AC816 /* Keyboard.m in Sources */,
+				926EBD701D87EC20003AA841 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				926EBD661D87E29C003AA841 /* ZHZImageScrollViewLoop.m in Sources */,
 				9254C18E1D7FE4CD003AC816 /* ZHZDataCache.m in Sources */,
 				929494671D86A4C800CE1E74 /* mask.c in Sources */,
