@@ -19,19 +19,30 @@ PODS:
   - FMDB/standard (2.6.2)
   - iCarousel (1.8.2)
   - Masonry (1.0.1)
+  - MBProgressHUD (0.9.2)
+  - MJRefresh (3.1.12)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
 
 DEPENDENCIES:
   - AFNetworking
   - FMDB
   - iCarousel
   - Masonry
+  - MBProgressHUD (~> 0.9.1)
+  - MJRefresh
+  - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   iCarousel: 67c8a43da5a46795b56aadfc96cd36a16f6149b2
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
 
-PODFILE CHECKSUM: fe0a285c9f82db8ed29c166b505f3d60eab6fc49
+PODFILE CHECKSUM: 251edf3d912f864a1a3933a3f470f473916c4d56
 
 COCOAPODS: 1.1.0.beta.1

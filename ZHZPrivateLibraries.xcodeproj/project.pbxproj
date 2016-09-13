@@ -58,6 +58,8 @@
 		925A1DC21D82AEE500E243C9 /* ZHZScaleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 925A1DC11D82AEE500E243C9 /* ZHZScaleImageView.m */; };
 		925A1DC51D82B68500E243C9 /* ZHZPregressButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 925A1DC41D82B68500E243C9 /* ZHZPregressButton.m */; };
 		925A1DC81D82B6C400E243C9 /* ZHZPregressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 925A1DC71D82B6C400E243C9 /* ZHZPregressLayer.m */; };
+		926EBD621D87E081003AA841 /* ZHZTableViewRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 926EBD611D87E081003AA841 /* ZHZTableViewRefreshHeader.m */; };
+		926EBD661D87E29C003AA841 /* ZHZImageScrollViewLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 926EBD651D87E29C003AA841 /* ZHZImageScrollViewLoop.m */; };
 		929493751D868D7F00CE1E74 /* ZHZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 929493721D868D7F00CE1E74 /* ZHZTabBar.m */; };
 		929493761D868D7F00CE1E74 /* ZHZTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 929493741D868D7F00CE1E74 /* ZHZTabBarVC.m */; };
 		929493F41D86934400CE1E74 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 929493791D86934400CE1E74 /* Contents.json */; };
@@ -252,6 +254,10 @@
 		925A1DC41D82B68500E243C9 /* ZHZPregressButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZPregressButton.m; sourceTree = "<group>"; };
 		925A1DC61D82B6C400E243C9 /* ZHZPregressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZPregressLayer.h; sourceTree = "<group>"; };
 		925A1DC71D82B6C400E243C9 /* ZHZPregressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZPregressLayer.m; sourceTree = "<group>"; };
+		926EBD601D87E081003AA841 /* ZHZTableViewRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZTableViewRefreshHeader.h; sourceTree = "<group>"; };
+		926EBD611D87E081003AA841 /* ZHZTableViewRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZTableViewRefreshHeader.m; sourceTree = "<group>"; };
+		926EBD641D87E29C003AA841 /* ZHZImageScrollViewLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZImageScrollViewLoop.h; sourceTree = "<group>"; };
+		926EBD651D87E29C003AA841 /* ZHZImageScrollViewLoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZImageScrollViewLoop.m; sourceTree = "<group>"; };
 		929493711D868D7F00CE1E74 /* ZHZTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZTabBar.h; sourceTree = "<group>"; };
 		929493721D868D7F00CE1E74 /* ZHZTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZTabBar.m; sourceTree = "<group>"; };
 		929493731D868D7F00CE1E74 /* ZHZTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZTabBarVC.h; sourceTree = "<group>"; };
@@ -419,6 +425,8 @@
 		9254C15E1D7FBF1E003AC816 /* ZHZPrivateLibraries */ = {
 			isa = PBXGroup;
 			children = (
+				926EBD631D87E286003AA841 /* ImageLoopView */,
+				926EBD5F1D87DD73003AA841 /* MJRefreshHeader */,
 				9294944D1D86A4C800CE1E74 /* QRCodeScanner */,
 				929494461D86A0FC00CE1E74 /* PickView */,
 				925A1DB71D82AB4C00E243C9 /* Main */,
@@ -653,6 +661,24 @@
 				9254C19D1D7FED10003AC816 /* ZHZPlayer.m */,
 			);
 			name = video;
+			sourceTree = "<group>";
+		};
+		926EBD5F1D87DD73003AA841 /* MJRefreshHeader */ = {
+			isa = PBXGroup;
+			children = (
+				926EBD601D87E081003AA841 /* ZHZTableViewRefreshHeader.h */,
+				926EBD611D87E081003AA841 /* ZHZTableViewRefreshHeader.m */,
+			);
+			path = MJRefreshHeader;
+			sourceTree = "<group>";
+		};
+		926EBD631D87E286003AA841 /* ImageLoopView */ = {
+			isa = PBXGroup;
+			children = (
+				926EBD641D87E29C003AA841 /* ZHZImageScrollViewLoop.h */,
+				926EBD651D87E29C003AA841 /* ZHZImageScrollViewLoop.m */,
+			);
+			path = ImageLoopView;
 			sourceTree = "<group>";
 		};
 		929493701D868D5E00CE1E74 /* tabBarVC */ = {
@@ -1413,6 +1439,7 @@
 				925A1DC81D82B6C400E243C9 /* ZHZPregressLayer.m in Sources */,
 				9294944B1D86A11000CE1E74 /* ZHZPickView.m in Sources */,
 				929494661D86A4C800CE1E74 /* bitstream.c in Sources */,
+				926EBD621D87E081003AA841 /* ZHZTableViewRefreshHeader.m in Sources */,
 				929494701D86AC7B00CE1E74 /* ZHZCustomFMDB.m in Sources */,
 				925A1DC21D82AEE500E243C9 /* ZHZScaleImageView.m in Sources */,
 				925A1DB31D82A5F600E243C9 /* ZHZQQRedButtomView.m in Sources */,
@@ -1420,6 +1447,7 @@
 				9294946D1D86A4C800CE1E74 /* UIImage+MDQRCode.m in Sources */,
 				929494651D86A4C800CE1E74 /* QRCScannerViewController.m in Sources */,
 				9254C1921D7FE59A003AC816 /* Keyboard.m in Sources */,
+				926EBD661D87E29C003AA841 /* ZHZImageScrollViewLoop.m in Sources */,
 				9254C18E1D7FE4CD003AC816 /* ZHZDataCache.m in Sources */,
 				929494671D86A4C800CE1E74 /* mask.c in Sources */,
 				9294946B1D86A4C800CE1E74 /* rscode.c in Sources */,
