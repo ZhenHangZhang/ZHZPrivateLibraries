@@ -60,6 +60,8 @@
 		925A1DC81D82B6C400E243C9 /* ZHZPregressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 925A1DC71D82B6C400E243C9 /* ZHZPregressLayer.m */; };
 		926EBD621D87E081003AA841 /* ZHZTableViewRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 926EBD611D87E081003AA841 /* ZHZTableViewRefreshHeader.m */; };
 		926EBD661D87E29C003AA841 /* ZHZImageScrollViewLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 926EBD651D87E29C003AA841 /* ZHZImageScrollViewLoop.m */; };
+		926EBD6A1D87E82C003AA841 /* ZHZDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 926EBD691D87E82C003AA841 /* ZHZDropDownMenu.m */; };
+		926EBD6C1D87E900003AA841 /* ico_make.png in Resources */ = {isa = PBXBuildFile; fileRef = 926EBD6B1D87E900003AA841 /* ico_make.png */; };
 		929493751D868D7F00CE1E74 /* ZHZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 929493721D868D7F00CE1E74 /* ZHZTabBar.m */; };
 		929493761D868D7F00CE1E74 /* ZHZTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 929493741D868D7F00CE1E74 /* ZHZTabBarVC.m */; };
 		929493F41D86934400CE1E74 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 929493791D86934400CE1E74 /* Contents.json */; };
@@ -258,6 +260,9 @@
 		926EBD611D87E081003AA841 /* ZHZTableViewRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZTableViewRefreshHeader.m; sourceTree = "<group>"; };
 		926EBD641D87E29C003AA841 /* ZHZImageScrollViewLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZImageScrollViewLoop.h; sourceTree = "<group>"; };
 		926EBD651D87E29C003AA841 /* ZHZImageScrollViewLoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZImageScrollViewLoop.m; sourceTree = "<group>"; };
+		926EBD681D87E82C003AA841 /* ZHZDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZDropDownMenu.h; sourceTree = "<group>"; };
+		926EBD691D87E82C003AA841 /* ZHZDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZDropDownMenu.m; sourceTree = "<group>"; };
+		926EBD6B1D87E900003AA841 /* ico_make.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_make.png; sourceTree = "<group>"; };
 		929493711D868D7F00CE1E74 /* ZHZTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZTabBar.h; sourceTree = "<group>"; };
 		929493721D868D7F00CE1E74 /* ZHZTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZTabBar.m; sourceTree = "<group>"; };
 		929493731D868D7F00CE1E74 /* ZHZTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZTabBarVC.h; sourceTree = "<group>"; };
@@ -425,6 +430,7 @@
 		9254C15E1D7FBF1E003AC816 /* ZHZPrivateLibraries */ = {
 			isa = PBXGroup;
 			children = (
+				926EBD671D87E7F2003AA841 /* DropDownMenu */,
 				926EBD631D87E286003AA841 /* ImageLoopView */,
 				926EBD5F1D87DD73003AA841 /* MJRefreshHeader */,
 				9294944D1D86A4C800CE1E74 /* QRCodeScanner */,
@@ -679,6 +685,16 @@
 				926EBD651D87E29C003AA841 /* ZHZImageScrollViewLoop.m */,
 			);
 			path = ImageLoopView;
+			sourceTree = "<group>";
+		};
+		926EBD671D87E7F2003AA841 /* DropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				926EBD6B1D87E900003AA841 /* ico_make.png */,
+				926EBD681D87E82C003AA841 /* ZHZDropDownMenu.h */,
+				926EBD691D87E82C003AA841 /* ZHZDropDownMenu.m */,
+			);
+			path = DropDownMenu;
 			sourceTree = "<group>";
 		};
 		929493701D868D5E00CE1E74 /* tabBarVC */ = {
@@ -1349,6 +1365,7 @@
 				9254C1CB1D800D44003AC816 /* title2@2x.png in Resources */,
 				929494341D86934400CE1E74 /* Contents.json in Resources */,
 				929493F71D86934400CE1E74 /* navigationbar_arrow_up@2x.png in Resources */,
+				926EBD6C1D87E900003AA841 /* ico_make.png in Resources */,
 				929494281D86934400CE1E74 /* Contents.json in Resources */,
 				9294942B1D86934400CE1E74 /* tabbar_home@2x.png in Resources */,
 				929494381D86934400CE1E74 /* Contents.json in Resources */,
@@ -1473,6 +1490,7 @@
 				9255CA931D812A57006A6A24 /* ZHZImageCustom.m in Sources */,
 				929493751D868D7F00CE1E74 /* ZHZTabBar.m in Sources */,
 				925A1DBF1D82AD6A00E243C9 /* ZHZVoiceTools.m in Sources */,
+				926EBD6A1D87E82C003AA841 /* ZHZDropDownMenu.m in Sources */,
 				925A1DA31D825D3E00E243C9 /* ZHZCustomGuidViewController.m in Sources */,
 				9254C19E1D7FED10003AC816 /* ZHZPlayer.m in Sources */,
 			);
