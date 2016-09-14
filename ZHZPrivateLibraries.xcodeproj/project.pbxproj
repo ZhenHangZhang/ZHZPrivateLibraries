@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		59798FF47D4187649401F95C /* libPods-ZHZPrivateLibraries.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31C1DC555E85E3B61660CBA8 /* libPods-ZHZPrivateLibraries.a */; };
+		510EE60CB19C4849371CE495 /* Pods_ZHZPrivateLibraries.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 561D76EF5CF6563F422ECBF5 /* Pods_ZHZPrivateLibraries.framework */; };
 		9254C1611D7FBF1E003AC816 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9254C1601D7FBF1E003AC816 /* main.m */; };
 		9254C1641D7FBF1E003AC816 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9254C1631D7FBF1E003AC816 /* AppDelegate.m */; };
 		9254C1671D7FBF1E003AC816 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9254C1661D7FBF1E003AC816 /* ViewController.m */; };
@@ -173,7 +173,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		31C1DC555E85E3B61660CBA8 /* libPods-ZHZPrivateLibraries.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZHZPrivateLibraries.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		561D76EF5CF6563F422ECBF5 /* Pods_ZHZPrivateLibraries.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZHZPrivateLibraries.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9254C15C1D7FBF1E003AC816 /* ZHZPrivateLibraries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZHZPrivateLibraries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9254C1601D7FBF1E003AC816 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9254C1621D7FBF1E003AC816 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -387,7 +387,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59798FF47D4187649401F95C /* libPods-ZHZPrivateLibraries.a in Frameworks */,
+				510EE60CB19C4849371CE495 /* Pods_ZHZPrivateLibraries.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,7 +404,7 @@
 		91BEBAC3C8AECBBBA7656F0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				31C1DC555E85E3B61660CBA8 /* libPods-ZHZPrivateLibraries.a */,
+				561D76EF5CF6563F422ECBF5 /* Pods_ZHZPrivateLibraries.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

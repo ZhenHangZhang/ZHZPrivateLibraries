@@ -1,0 +1,6 @@
+framework module Pods_ZHZPrivateLibraries {
+  umbrella header "Pods-ZHZPrivateLibraries-umbrella.h"
+
+  export *
+  module * { export * }
+}

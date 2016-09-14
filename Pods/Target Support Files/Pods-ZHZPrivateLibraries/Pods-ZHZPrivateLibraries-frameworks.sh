@@ -82,3 +82,24 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/FMDB/FMDB.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MBProgressHUD/MBProgressHUD.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MJRefresh/MJRefresh.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Masonry/Masonry.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SDWebImage/SDWebImage.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/XHTagView/XHTagView.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/iCarousel/iCarousel.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/FMDB/FMDB.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MBProgressHUD/MBProgressHUD.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MJRefresh/MJRefresh.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Masonry/Masonry.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SDWebImage/SDWebImage.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/XHTagView/XHTagView.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/iCarousel/iCarousel.framework"
+fi
