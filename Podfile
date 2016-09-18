@@ -14,5 +14,7 @@ pod 'SDWebImage'
 pod 'XHTagView'
 pod 'MBProgressHUD', '~> 0.9.1'
 
+pod 'UMengSocialCOM'
+
 
 end

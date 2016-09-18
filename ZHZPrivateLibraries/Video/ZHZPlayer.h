@@ -29,7 +29,7 @@
 
 
 #import <UIKit/UIKit.h>
-#import <Masonry.h>
+#import "Masonry.h"
 // 播放器的几种状态
 typedef NS_ENUM(NSInteger, ZHZPlayerState) {
     ZHZPlayerStateFailed,     // 播放失败

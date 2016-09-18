@@ -79,6 +79,7 @@ typedef void (^ZHZWhenTappedBlock)();
 
 
 
+@property (nonatomic, assign) CGFloat bottom;
 
 
 

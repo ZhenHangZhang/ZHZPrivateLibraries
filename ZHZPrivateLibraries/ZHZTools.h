@@ -123,6 +123,13 @@
 +(BOOL)isHanWord:(NSString*)str;
 
 
++ (NSString *)validString:(NSString *)string;
+
+/**
+ *  判断字符串是否为空
+ */
++ (BOOL)isBlankString:(NSString *)string;
+
 
 
 

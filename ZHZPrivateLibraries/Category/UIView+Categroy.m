@@ -92,6 +92,11 @@
 }
 
 
+- (CGFloat)bottom
+{
+    return self.frame.size.height + self.frame.origin.y;
+}
+
 
 
 static char kWhenTappedBlockKey;

@@ -146,6 +146,11 @@ THE SOFTWARE.
 
 
 
+## UMengSocialCOM
+
+Copyright 2011 - 2016 UMeng.com. All rights reserved.
+
+
 ## XHTagView
 
 The MIT License (MIT)

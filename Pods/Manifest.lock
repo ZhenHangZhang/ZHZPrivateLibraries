@@ -24,6 +24,7 @@ PODS:
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
+  - UMengSocialCOM (5.2.1)
   - XHTagView (2.0)
 
 DEPENDENCIES:
@@ -34,6 +35,7 @@ DEPENDENCIES:
   - MBProgressHUD (~> 0.9.1)
   - MJRefresh
   - SDWebImage
+  - UMengSocialCOM
   - XHTagView
 
 SPEC CHECKSUMS:
@@ -44,8 +46,9 @@ SPEC CHECKSUMS:
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  UMengSocialCOM: 074c135ce349aa4c8848d3fb8458757bcb6ffb67
   XHTagView: 288a6bdd22f48735c9b474902b7e0d9535c537c8
 
-PODFILE CHECKSUM: dc340a58f3c948f47a4d54df6d38ff9f103f987b
+PODFILE CHECKSUM: 65fe7c33e099fc3be4ca0ba58b084019cef4091f
 
 COCOAPODS: 1.1.0.beta.1
