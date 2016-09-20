@@ -36,7 +36,10 @@
     if (self.navigationController == nil) return ;
     [self.navigationController popViewControllerAnimated:YES];
 }
+-(void)loadData{
 
+
+}
 - (void)popToRootVc {
     if (self.navigationController == nil) return ;
     [self.navigationController popToRootViewControllerAnimated:YES];

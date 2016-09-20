@@ -194,6 +194,8 @@
 		9294946C1D86A4C800CE1E74 /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = 929494601D86A4C800CE1E74 /* split.c */; };
 		9294946D1D86A4C800CE1E74 /* UIImage+MDQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 929494631D86A4C800CE1E74 /* UIImage+MDQRCode.m */; };
 		929494701D86AC7B00CE1E74 /* ZHZCustomFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 9294946F1D86AC7B00CE1E74 /* ZHZCustomFMDB.m */; };
+		92FE1CAD1D90DAF300B6A1AC /* ZHZSplashScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FE1CAC1D90DAF300B6A1AC /* ZHZSplashScreenView.m */; };
+		92FE1CB01D90DC3400B6A1AC /* ZHZSplashScreenDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FE1CAF1D90DC3400B6A1AC /* ZHZSplashScreenDataManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -478,6 +480,10 @@
 		929494631D86A4C800CE1E74 /* UIImage+MDQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MDQRCode.m"; sourceTree = "<group>"; };
 		9294946E1D86AC7B00CE1E74 /* ZHZCustomFMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZCustomFMDB.h; sourceTree = "<group>"; };
 		9294946F1D86AC7B00CE1E74 /* ZHZCustomFMDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZCustomFMDB.m; sourceTree = "<group>"; };
+		92FE1CAB1D90DAF300B6A1AC /* ZHZSplashScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZSplashScreenView.h; sourceTree = "<group>"; };
+		92FE1CAC1D90DAF300B6A1AC /* ZHZSplashScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZSplashScreenView.m; sourceTree = "<group>"; };
+		92FE1CAE1D90DC3400B6A1AC /* ZHZSplashScreenDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZSplashScreenDataManager.h; sourceTree = "<group>"; };
+		92FE1CAF1D90DC3400B6A1AC /* ZHZSplashScreenDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZSplashScreenDataManager.m; sourceTree = "<group>"; };
 		E9245B85DB0F578C52D1A40C /* Pods-ZHZPrivateLibraries.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHZPrivateLibraries.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZHZPrivateLibraries/Pods-ZHZPrivateLibraries.debug.xcconfig"; sourceTree = "<group>"; };
 		F5AB2F137930DA8FA82B9E1F /* Pods-ZHZPrivateLibraries.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHZPrivateLibraries.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZHZPrivateLibraries/Pods-ZHZPrivateLibraries.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -681,6 +687,10 @@
 				9254C1AD1D80058A003AC816 /* ZHZInfoGuidScrollView.m */,
 				925A1DA11D825D3E00E243C9 /* ZHZCustomGuidViewController.h */,
 				925A1DA21D825D3E00E243C9 /* ZHZCustomGuidViewController.m */,
+				92FE1CAB1D90DAF300B6A1AC /* ZHZSplashScreenView.h */,
+				92FE1CAC1D90DAF300B6A1AC /* ZHZSplashScreenView.m */,
+				92FE1CAE1D90DC3400B6A1AC /* ZHZSplashScreenDataManager.h */,
+				92FE1CAF1D90DC3400B6A1AC /* ZHZSplashScreenDataManager.m */,
 			);
 			path = GuidView;
 			sourceTree = "<group>";
@@ -1443,6 +1453,7 @@
 				TargetAttributes = {
 					9254C15B1D7FBF1E003AC816 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = S783ZLB9W4;
 					};
 					9254C1741D7FBF1E003AC816 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -1690,6 +1701,7 @@
 				9254C1881D7FC025003AC816 /* ZHZTools.m in Sources */,
 				9254C1A41D7FF50C003AC816 /* ZHZCustomAlertView.m in Sources */,
 				9259402C1D8E59C900A01A3B /* ZHZWkWebViewController.m in Sources */,
+				92FE1CAD1D90DAF300B6A1AC /* ZHZSplashScreenView.m in Sources */,
 				925940651D8E69DC00A01A3B /* ZHZLocationManager.m in Sources */,
 				9255CA8F1D810B85006A6A24 /* ZHZObjectTransformer.m in Sources */,
 				9294946A1D86A4C800CE1E74 /* qrspec.c in Sources */,
@@ -1713,6 +1725,7 @@
 				9294944C1D86A11000CE1E74 /* ZHZTimeChooseView.m in Sources */,
 				9254C1611D7FBF1E003AC816 /* main.m in Sources */,
 				925940871D8E987E00A01A3B /* TZImageManager.m in Sources */,
+				92FE1CB01D90DC3400B6A1AC /* ZHZSplashScreenDataManager.m in Sources */,
 				925940411D8E5D6F00A01A3B /* UIView+Layer.m in Sources */,
 				925940291D8E3E2500A01A3B /* ZHZCustomLoadingAnimationView.m in Sources */,
 				925A1DB01D82A11000E243C9 /* UIImage+ZHZCategory.m in Sources */,
@@ -1851,6 +1864,7 @@
 			baseConfigurationReference = E9245B85DB0F578C52D1A40C /* Pods-ZHZPrivateLibraries.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S783ZLB9W4;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ZHZPrivateLibraries/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1865,6 +1879,7 @@
 			baseConfigurationReference = F5AB2F137930DA8FA82B9E1F /* Pods-ZHZPrivateLibraries.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S783ZLB9W4;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ZHZPrivateLibraries/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

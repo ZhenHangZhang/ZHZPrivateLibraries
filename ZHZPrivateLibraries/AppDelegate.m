@@ -21,6 +21,7 @@
     //这个模式特别好减少APPdelegate的代码量，更直观的看到框架结构，所有的操作是放在Manager里面 进行逻辑判断的
     [ZHZRootViewControllerManager manager].window = self.window ;
     [self.window makeKeyWindow];
+    NSLog(@"这是iphone7plus测试用的");
     return YES;
 }
 
