@@ -10,6 +10,10 @@
 #import "ZHZTabBar.h"
 #import "AppDelegate.h"
 #import "ZHZBaseNavViewController.h"
+#import "OneViewController.h"
+#import "TwoViewController.h"
+
+
 
 #define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
 
@@ -48,14 +52,13 @@
 
 }
 -(void)addAllChildVcs{
-            UIViewController *discover = [[UIViewController alloc] init];
-    discover.view.backgroundColor = [UIColor whiteColor];
-    [self addOneChlildVc:discover title:@"用户" imageName:@"tabbar_discover" selectedImageName:@"tabbar_discover_selected"];
-    UIViewController *profile = [[UIViewController alloc] init];
-    profile.view.backgroundColor = [UIColor whiteColor];
-
+    OneViewController *profile = [[OneViewController alloc] initWithNibName:@"OneViewController" bundle:nil];
+    
     [self addOneChlildVc:profile title:@"地图" imageName:@"tabbar_profile" selectedImageName:@"tabbar_profile_selected"];
-}
+
+    TwoViewController *discover = [[TwoViewController alloc] init];
+    [self addOneChlildVc:discover title:@"用户" imageName:@"tabbar_discover" selectedImageName:@"tabbar_discover_selected"];
+    }
 
 /**
  *  添加一个子控制器
@@ -99,6 +102,9 @@
 
 -(void)tabBarDidClickedPlusButton:(ZHZTabBar *)tabBar{
   
+    NSLog(@"test");
+    
+    
 }
 - (void)viewWillDisappear:(BOOL)animated
 {

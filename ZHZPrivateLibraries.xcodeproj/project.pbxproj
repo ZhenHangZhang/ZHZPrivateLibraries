@@ -196,6 +196,12 @@
 		929494701D86AC7B00CE1E74 /* ZHZCustomFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 9294946F1D86AC7B00CE1E74 /* ZHZCustomFMDB.m */; };
 		92FE1CAD1D90DAF300B6A1AC /* ZHZSplashScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FE1CAC1D90DAF300B6A1AC /* ZHZSplashScreenView.m */; };
 		92FE1CB01D90DC3400B6A1AC /* ZHZSplashScreenDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FE1CAF1D90DC3400B6A1AC /* ZHZSplashScreenDataManager.m */; };
+		92FE1CB31D90F14A00B6A1AC /* UIImage+ZHZCreateBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FE1CB21D90F14A00B6A1AC /* UIImage+ZHZCreateBarcode.m */; };
+		92FE1CB61D90F1FE00B6A1AC /* UIImage+ZHZRoundRectImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FE1CB51D90F1FE00B6A1AC /* UIImage+ZHZRoundRectImage.m */; };
+		92FE1CBA1D91065900B6A1AC /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FE1CB81D91065900B6A1AC /* OneViewController.m */; };
+		92FE1CBB1D91065900B6A1AC /* OneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92FE1CB91D91065900B6A1AC /* OneViewController.xib */; };
+		92FE1CBF1D91066700B6A1AC /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FE1CBD1D91066700B6A1AC /* TwoViewController.m */; };
+		92FE1CC01D91066700B6A1AC /* TwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92FE1CBE1D91066700B6A1AC /* TwoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -484,6 +490,16 @@
 		92FE1CAC1D90DAF300B6A1AC /* ZHZSplashScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZSplashScreenView.m; sourceTree = "<group>"; };
 		92FE1CAE1D90DC3400B6A1AC /* ZHZSplashScreenDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZSplashScreenDataManager.h; sourceTree = "<group>"; };
 		92FE1CAF1D90DC3400B6A1AC /* ZHZSplashScreenDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZSplashScreenDataManager.m; sourceTree = "<group>"; };
+		92FE1CB11D90F14A00B6A1AC /* UIImage+ZHZCreateBarcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZHZCreateBarcode.h"; sourceTree = "<group>"; };
+		92FE1CB21D90F14A00B6A1AC /* UIImage+ZHZCreateBarcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZHZCreateBarcode.m"; sourceTree = "<group>"; };
+		92FE1CB41D90F1FE00B6A1AC /* UIImage+ZHZRoundRectImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZHZRoundRectImage.h"; sourceTree = "<group>"; };
+		92FE1CB51D90F1FE00B6A1AC /* UIImage+ZHZRoundRectImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZHZRoundRectImage.m"; sourceTree = "<group>"; };
+		92FE1CB71D91065900B6A1AC /* OneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		92FE1CB81D91065900B6A1AC /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
+		92FE1CB91D91065900B6A1AC /* OneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OneViewController.xib; sourceTree = "<group>"; };
+		92FE1CBC1D91066700B6A1AC /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		92FE1CBD1D91066700B6A1AC /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+		92FE1CBE1D91066700B6A1AC /* TwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoViewController.xib; sourceTree = "<group>"; };
 		E9245B85DB0F578C52D1A40C /* Pods-ZHZPrivateLibraries.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHZPrivateLibraries.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZHZPrivateLibraries/Pods-ZHZPrivateLibraries.debug.xcconfig"; sourceTree = "<group>"; };
 		F5AB2F137930DA8FA82B9E1F /* Pods-ZHZPrivateLibraries.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHZPrivateLibraries.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZHZPrivateLibraries/Pods-ZHZPrivateLibraries.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -566,6 +582,12 @@
 				9254C1631D7FBF1E003AC816 /* AppDelegate.m */,
 				9254C1651D7FBF1E003AC816 /* ViewController.h */,
 				9254C1661D7FBF1E003AC816 /* ViewController.m */,
+				92FE1CB71D91065900B6A1AC /* OneViewController.h */,
+				92FE1CB81D91065900B6A1AC /* OneViewController.m */,
+				92FE1CB91D91065900B6A1AC /* OneViewController.xib */,
+				92FE1CBC1D91066700B6A1AC /* TwoViewController.h */,
+				92FE1CBD1D91066700B6A1AC /* TwoViewController.m */,
+				92FE1CBE1D91066700B6A1AC /* TwoViewController.xib */,
 				9254C1681D7FBF1E003AC816 /* Main.storyboard */,
 				9254C18A1D7FC0DA003AC816 /* ZHZHeader.h */,
 				9254C16B1D7FBF1E003AC816 /* Assets.xcassets */,
@@ -1357,6 +1379,10 @@
 				929494501D86A4C800CE1E74 /* QRCScannerViewController.h */,
 				929494511D86A4C800CE1E74 /* QRCScannerViewController.m */,
 				929494521D86A4C800CE1E74 /* resource */,
+				92FE1CB11D90F14A00B6A1AC /* UIImage+ZHZCreateBarcode.h */,
+				92FE1CB21D90F14A00B6A1AC /* UIImage+ZHZCreateBarcode.m */,
+				92FE1CB41D90F1FE00B6A1AC /* UIImage+ZHZRoundRectImage.h */,
+				92FE1CB51D90F1FE00B6A1AC /* UIImage+ZHZRoundRectImage.m */,
 			);
 			path = QRCodeScanner;
 			sourceTree = "<group>";
@@ -1572,8 +1598,10 @@
 				9254C1CC1D800D44003AC816 /* title3@2x.png in Resources */,
 				9254C1CB1D800D44003AC816 /* title2@2x.png in Resources */,
 				929494341D86934400CE1E74 /* Contents.json in Resources */,
+				92FE1CC01D91066700B6A1AC /* TwoViewController.xib in Resources */,
 				929493F71D86934400CE1E74 /* navigationbar_arrow_up@2x.png in Resources */,
 				926EBD6C1D87E900003AA841 /* ico_make.png in Resources */,
+				92FE1CBB1D91065900B6A1AC /* OneViewController.xib in Resources */,
 				929494281D86934400CE1E74 /* Contents.json in Resources */,
 				9294942B1D86934400CE1E74 /* tabbar_home@2x.png in Resources */,
 				929494381D86934400CE1E74 /* Contents.json in Resources */,
@@ -1665,6 +1693,7 @@
 				925A1DB61D82A7C800E243C9 /* ZHZBadgeView.m in Sources */,
 				925940841D8E987E00A01A3B /* NSBundle+TZImagePicker.m in Sources */,
 				925A1DC81D82B6C400E243C9 /* ZHZPregressLayer.m in Sources */,
+				92FE1CB61D90F1FE00B6A1AC /* UIImage+ZHZRoundRectImage.m in Sources */,
 				9294944B1D86A11000CE1E74 /* ZHZPickView.m in Sources */,
 				929494661D86A4C800CE1E74 /* bitstream.c in Sources */,
 				9259405C1D8E623500A01A3B /* ZHZCustomSegmentView.m in Sources */,
@@ -1675,8 +1704,10 @@
 				925A1DB31D82A5F600E243C9 /* ZHZQQRedButtomView.m in Sources */,
 				9259408A1D8E987E00A01A3B /* TZPhotoPickerController.m in Sources */,
 				925940351D8E5B8B00A01A3B /* NSString+Size.m in Sources */,
+				92FE1CB31D90F14A00B6A1AC /* UIImage+ZHZCreateBarcode.m in Sources */,
 				9294946C1D86A4C800CE1E74 /* split.c in Sources */,
 				9294946D1D86A4C800CE1E74 /* UIImage+MDQRCode.m in Sources */,
+				92FE1CBF1D91066700B6A1AC /* TwoViewController.m in Sources */,
 				925940231D8E3C0F00A01A3B /* ZHZBaseViewController.m in Sources */,
 				929494651D86A4C800CE1E74 /* QRCScannerViewController.m in Sources */,
 				9254C1921D7FE59A003AC816 /* Keyboard.m in Sources */,
@@ -1728,6 +1759,7 @@
 				92FE1CB01D90DC3400B6A1AC /* ZHZSplashScreenDataManager.m in Sources */,
 				925940411D8E5D6F00A01A3B /* UIView+Layer.m in Sources */,
 				925940291D8E3E2500A01A3B /* ZHZCustomLoadingAnimationView.m in Sources */,
+				92FE1CBA1D91065900B6A1AC /* OneViewController.m in Sources */,
 				925A1DB01D82A11000E243C9 /* UIImage+ZHZCategory.m in Sources */,
 				9259406D1D8E7C3600A01A3B /* ZHZCustomTableView.m in Sources */,
 				9255CA931D812A57006A6A24 /* ZHZImageCustom.m in Sources */,
