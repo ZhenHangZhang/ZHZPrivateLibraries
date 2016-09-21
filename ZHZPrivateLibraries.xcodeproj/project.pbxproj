@@ -202,6 +202,9 @@
 		92FE1CBB1D91065900B6A1AC /* OneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92FE1CB91D91065900B6A1AC /* OneViewController.xib */; };
 		92FE1CBF1D91066700B6A1AC /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FE1CBD1D91066700B6A1AC /* TwoViewController.m */; };
 		92FE1CC01D91066700B6A1AC /* TwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92FE1CBE1D91066700B6A1AC /* TwoViewController.xib */; };
+		92FE1CC31D911ABC00B6A1AC /* ZHZViewPager.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FE1CC21D911ABC00B6A1AC /* ZHZViewPager.m */; };
+		92FE1CC61D913DAB00B6A1AC /* ZHZCustomMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FE1CC51D913DAB00B6A1AC /* ZHZCustomMenu.m */; };
+		92FE1CC91D913DC400B6A1AC /* ZHZCustomMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FE1CC81D913DC400B6A1AC /* ZHZCustomMenuItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -500,6 +503,12 @@
 		92FE1CBC1D91066700B6A1AC /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
 		92FE1CBD1D91066700B6A1AC /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 		92FE1CBE1D91066700B6A1AC /* TwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoViewController.xib; sourceTree = "<group>"; };
+		92FE1CC11D911ABC00B6A1AC /* ZHZViewPager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZViewPager.h; sourceTree = "<group>"; };
+		92FE1CC21D911ABC00B6A1AC /* ZHZViewPager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZViewPager.m; sourceTree = "<group>"; };
+		92FE1CC41D913DAB00B6A1AC /* ZHZCustomMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZCustomMenu.h; sourceTree = "<group>"; };
+		92FE1CC51D913DAB00B6A1AC /* ZHZCustomMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZCustomMenu.m; sourceTree = "<group>"; };
+		92FE1CC71D913DC400B6A1AC /* ZHZCustomMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZCustomMenuItem.h; sourceTree = "<group>"; };
+		92FE1CC81D913DC400B6A1AC /* ZHZCustomMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZCustomMenuItem.m; sourceTree = "<group>"; };
 		E9245B85DB0F578C52D1A40C /* Pods-ZHZPrivateLibraries.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHZPrivateLibraries.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZHZPrivateLibraries/Pods-ZHZPrivateLibraries.debug.xcconfig"; sourceTree = "<group>"; };
 		F5AB2F137930DA8FA82B9E1F /* Pods-ZHZPrivateLibraries.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHZPrivateLibraries.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZHZPrivateLibraries/Pods-ZHZPrivateLibraries.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -854,6 +863,8 @@
 				925940581D8E60E200A01A3B /* ZHZCustomPlaceHolderTextView.m */,
 				9259405A1D8E623500A01A3B /* ZHZCustomSegmentView.h */,
 				9259405B1D8E623500A01A3B /* ZHZCustomSegmentView.m */,
+				92FE1CC11D911ABC00B6A1AC /* ZHZViewPager.h */,
+				92FE1CC21D911ABC00B6A1AC /* ZHZViewPager.m */,
 			);
 			name = CUSTOMVIEW;
 			path = "签名版";
@@ -912,6 +923,10 @@
 				926EBD6B1D87E900003AA841 /* ico_make.png */,
 				926EBD681D87E82C003AA841 /* ZHZDropDownMenu.h */,
 				926EBD691D87E82C003AA841 /* ZHZDropDownMenu.m */,
+				92FE1CC41D913DAB00B6A1AC /* ZHZCustomMenu.h */,
+				92FE1CC51D913DAB00B6A1AC /* ZHZCustomMenu.m */,
+				92FE1CC71D913DC400B6A1AC /* ZHZCustomMenuItem.h */,
+				92FE1CC81D913DC400B6A1AC /* ZHZCustomMenuItem.m */,
 			);
 			path = DropDownMenu;
 			sourceTree = "<group>";
@@ -1696,6 +1711,7 @@
 				92FE1CB61D90F1FE00B6A1AC /* UIImage+ZHZRoundRectImage.m in Sources */,
 				9294944B1D86A11000CE1E74 /* ZHZPickView.m in Sources */,
 				929494661D86A4C800CE1E74 /* bitstream.c in Sources */,
+				92FE1CC91D913DC400B6A1AC /* ZHZCustomMenuItem.m in Sources */,
 				9259405C1D8E623500A01A3B /* ZHZCustomSegmentView.m in Sources */,
 				926EBD621D87E081003AA841 /* ZHZTableViewRefreshHeader.m in Sources */,
 				925940851D8E987E00A01A3B /* TZAssetCell.m in Sources */,
@@ -1731,10 +1747,12 @@
 				929493761D868D7F00CE1E74 /* ZHZTabBarVC.m in Sources */,
 				9254C1881D7FC025003AC816 /* ZHZTools.m in Sources */,
 				9254C1A41D7FF50C003AC816 /* ZHZCustomAlertView.m in Sources */,
+				92FE1CC31D911ABC00B6A1AC /* ZHZViewPager.m in Sources */,
 				9259402C1D8E59C900A01A3B /* ZHZWkWebViewController.m in Sources */,
 				92FE1CAD1D90DAF300B6A1AC /* ZHZSplashScreenView.m in Sources */,
 				925940651D8E69DC00A01A3B /* ZHZLocationManager.m in Sources */,
 				9255CA8F1D810B85006A6A24 /* ZHZObjectTransformer.m in Sources */,
+				92FE1CC61D913DAB00B6A1AC /* ZHZCustomMenu.m in Sources */,
 				9294946A1D86A4C800CE1E74 /* qrspec.c in Sources */,
 				925A1DA71D825E8B00E243C9 /* UIView+Categroy.m in Sources */,
 				9254C19A1D7FE967003AC816 /* ZHZ_GCD.m in Sources */,

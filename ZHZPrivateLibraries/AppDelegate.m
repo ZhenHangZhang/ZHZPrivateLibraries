@@ -18,6 +18,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    NSLog(@"垃圾git客户端竟然不显示");
+    NSLog(@"是否是通过Schemes打开的%@",launchOptions);
+    if (launchOptions[UIApplicationLaunchOptionsURLKey]) {
+        
+    }
     //这个模式特别好减少APPdelegate的代码量，更直观的看到框架结构，所有的操作是放在Manager里面 进行逻辑判断的
     [ZHZRootViewControllerManager manager].window = self.window ;
     [self.window makeKeyWindow];
@@ -27,6 +32,13 @@
 
 - (void)applicationWillResignActive:(UIApplication *)application {
 
+}
+
+-(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
+    //
+    NSLog(@"%@",options);
+    NSLog(@"%s====>%@++++++%@=====>%@",__func__,url.host,url.path,url.query);
+    return YES;
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
