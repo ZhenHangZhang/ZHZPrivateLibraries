@@ -9,6 +9,7 @@
 #ifndef ZHZHeader_h
 #define ZHZHeader_h
 
+
 #import "ZHZFactory.h"
 //宏定义请求接口，
 #define URL_INFODICT       (@"http://b2c.ezparking.com.cn/rtpi-service/misc/token.do?deviceId=%@&app=com.ezparking.ios.qibutingche&version=%@")

@@ -18,37 +18,48 @@ PODS:
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
   - iCarousel (1.8.2)
+  - JSONModel (1.4.0)
   - Masonry (1.0.1)
   - MBProgressHUD (0.9.2)
+  - MJExtension (3.0.13)
   - MJRefresh (3.1.12)
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
   - UMengSocialCOM (5.2.1)
   - XHTagView (2.0)
+  - YYKit (1.0.7):
+    - YYKit/no-arc (= 1.0.7)
+  - YYKit/no-arc (1.0.7)
 
 DEPENDENCIES:
   - AFNetworking
   - FMDB
   - iCarousel
+  - JSONModel
   - Masonry
   - MBProgressHUD (~> 0.9.1)
+  - MJExtension
   - MJRefresh
   - SDWebImage
   - UMengSocialCOM
   - XHTagView
+  - YYKit
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   iCarousel: 67c8a43da5a46795b56aadfc96cd36a16f6149b2
+  JSONModel: 58fe3f8c29ff95ed94e7ee7dde87e807f5da5371
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   UMengSocialCOM: 074c135ce349aa4c8848d3fb8458757bcb6ffb67
   XHTagView: 288a6bdd22f48735c9b474902b7e0d9535c537c8
+  YYKit: 843d1b26e20b82c695790c9a89907eaa1e99907f
 
-PODFILE CHECKSUM: 65fe7c33e099fc3be4ca0ba58b084019cef4091f
+PODFILE CHECKSUM: a419383ef69d8f3b0786493a97ff442b83a7da28
 
 COCOAPODS: 1.1.0.beta.1

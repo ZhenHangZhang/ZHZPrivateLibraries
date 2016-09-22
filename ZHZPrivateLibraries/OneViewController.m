@@ -9,6 +9,10 @@
 #import "OneViewController.h"
 #import "UIImage+ZHZCreateBarcode.h"
 #import "ZHZViewPager.h"
+
+#import <YYKit/YYKit.h>
+
+
 //设备物理尺寸
 #define screen_width [UIScreen mainScreen].bounds.size.width
 #define screen_height [UIScreen mainScreen].bounds.size.height
@@ -49,14 +53,42 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)test:(id)sender {
-    NSURL *url = [NSURL URLWithString:@"news://"];
+//    NSURL *url = [NSURL URLWithString:@"news://"];
+//    
+//    if ([[UIApplication sharedApplication] canOpenURL:url]) {
+//        [[UIApplication sharedApplication] openURL:url];
+//    }
     
-    if ([[UIApplication sharedApplication] canOpenURL:url]) {
-        [[UIApplication sharedApplication] openURL:url];
-    }
+    [self show:@"消息通知"];
     self.ImagV.image = [UIImage imageOfQRFromURL:@"www.baidu.com" codeSize:self.ImagV.frame.size.width red:0 green:0 blue:0 insertImage:[UIImage new]];
 }
+-(void)show:(NSString*)msg{
+    CGFloat padding = 10;
+    
+    YYLabel *label = [YYLabel new];
+    label.text = msg;
+    label.font = [UIFont systemFontOfSize:16];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.textColor = [UIColor whiteColor];
+    label.backgroundColor = [UIColor colorWithRed:0.033 green:0.685 blue:0.978 alpha:0.730];
+    label.width = self.view.width;
+    label.textContainerInset = UIEdgeInsetsMake(padding, padding, padding, padding);
+    label.height = [msg heightForFont:label.font width:label.width] + 2 * padding;
+    
+    label.bottom = (kiOS7Later ? 64 : 0);
+    [self.view addSubview:label];
+    [UIView animateWithDuration:0.3 animations:^{
+        label.top = (kiOS7Later ? 64 : 0);
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.2 delay:2 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            label.bottom = (kiOS7Later ? 64 : 0);
+        } completion:^(BOOL finished) {
+            [label removeFromSuperview];
+        }];
+    }];
 
+    
+}
 /*
 #pragma mark - Navigation
 

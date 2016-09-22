@@ -14,7 +14,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JSONModel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MJExtension.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -44,6 +54,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>YYKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>iCarousel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,6 +67,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0F9C2CAA8CB47C9757A942E3403B9CCC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
 		<dict>
 			<key>primary</key>
@@ -67,17 +87,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2BD64DEF3FD0EA1ACE091FE75341D6BB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>3634ABA74A6F41DB3C7516A583373EE8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7D2122D148D5149D7BE7E82C045C568A</key>
+		<key>4DC28F72F16512048626E44594F7336F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7044823F83F981505EA5267B4FEBB59F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7C0126D717EB28DC6DB2EEA2E20B5172</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,7 +112,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BA0E4850927B33B72B9A501B8B1FBE79</key>
+		<key>AF21780C841830BE5AD3F34076925612</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C6AB2918BD841A4F277634E9727924BB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
