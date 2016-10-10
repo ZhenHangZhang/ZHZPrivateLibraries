@@ -208,6 +208,12 @@
 		92BE3E401DAB89CB00B1058A /* SGAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BE3E361DAB89CA00B1058A /* SGAlertView.m */; };
 		92BE3E411DAB89CB00B1058A /* sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = 92BE3E381DAB89CB00B1058A /* sound.caf */; };
 		92BE3E421DAB89CB00B1058A /* SGScanningQRCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BE3E3B1DAB89CB00B1058A /* SGScanningQRCodeView.m */; };
+		92BE3E4F1DAB8C0800B1058A /* TZDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BE3E451DAB8C0800B1058A /* TZDatePickerView.m */; };
+		92BE3E501DAB8C0800B1058A /* TZDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92BE3E461DAB8C0800B1058A /* TZDatePickerView.xib */; };
+		92BE3E511DAB8C0800B1058A /* TZPopInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BE3E491DAB8C0800B1058A /* TZPopInputView.m */; };
+		92BE3E521DAB8C0800B1058A /* TZPopInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92BE3E4A1DAB8C0800B1058A /* TZPopInputView.xib */; };
+		92BE3E531DAB8C0800B1058A /* TZTimePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BE3E4D1DAB8C0800B1058A /* TZTimePickerView.m */; };
+		92BE3E541DAB8C0800B1058A /* TZTimePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92BE3E4E1DAB8C0800B1058A /* TZTimePickerView.xib */; };
 		92FE1CAD1D90DAF300B6A1AC /* ZHZSplashScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FE1CAC1D90DAF300B6A1AC /* ZHZSplashScreenView.m */; };
 		92FE1CB01D90DC3400B6A1AC /* ZHZSplashScreenDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FE1CAF1D90DC3400B6A1AC /* ZHZSplashScreenDataManager.m */; };
 		92FE1CB31D90F14A00B6A1AC /* UIImage+ZHZCreateBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FE1CB21D90F14A00B6A1AC /* UIImage+ZHZCreateBarcode.m */; };
@@ -529,6 +535,15 @@
 		92BE3E381DAB89CB00B1058A /* sound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound.caf; sourceTree = "<group>"; };
 		92BE3E3A1DAB89CB00B1058A /* SGScanningQRCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGScanningQRCodeView.h; sourceTree = "<group>"; };
 		92BE3E3B1DAB89CB00B1058A /* SGScanningQRCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGScanningQRCodeView.m; sourceTree = "<group>"; };
+		92BE3E441DAB8C0800B1058A /* TZDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZDatePickerView.h; sourceTree = "<group>"; };
+		92BE3E451DAB8C0800B1058A /* TZDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZDatePickerView.m; sourceTree = "<group>"; };
+		92BE3E461DAB8C0800B1058A /* TZDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TZDatePickerView.xib; sourceTree = "<group>"; };
+		92BE3E481DAB8C0800B1058A /* TZPopInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPopInputView.h; sourceTree = "<group>"; };
+		92BE3E491DAB8C0800B1058A /* TZPopInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPopInputView.m; sourceTree = "<group>"; };
+		92BE3E4A1DAB8C0800B1058A /* TZPopInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TZPopInputView.xib; sourceTree = "<group>"; };
+		92BE3E4C1DAB8C0800B1058A /* TZTimePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZTimePickerView.h; sourceTree = "<group>"; };
+		92BE3E4D1DAB8C0800B1058A /* TZTimePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZTimePickerView.m; sourceTree = "<group>"; };
+		92BE3E4E1DAB8C0800B1058A /* TZTimePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TZTimePickerView.xib; sourceTree = "<group>"; };
 		92FE1CAB1D90DAF300B6A1AC /* ZHZSplashScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZSplashScreenView.h; sourceTree = "<group>"; };
 		92FE1CAC1D90DAF300B6A1AC /* ZHZSplashScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZSplashScreenView.m; sourceTree = "<group>"; };
 		92FE1CAE1D90DC3400B6A1AC /* ZHZSplashScreenDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZSplashScreenDataManager.h; sourceTree = "<group>"; };
@@ -895,6 +910,9 @@
 		925A1DAA1D82A03400E243C9 /* CUSTOMVIEW */ = {
 			isa = PBXGroup;
 			children = (
+				92BE3E431DAB8C0800B1058A /* TZDatePicker */,
+				92BE3E471DAB8C0800B1058A /* TZPopInputView */,
+				92BE3E4B1DAB8C0800B1058A /* TZTimePicker */,
 				925A1DAB1D82A06900E243C9 /* ZHZPaintView.h */,
 				925A1DAC1D82A06900E243C9 /* ZHZPaintView.m */,
 				928435BD1D9E166700F80526 /* ZHZBorderView.h */,
@@ -1547,6 +1565,36 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		92BE3E431DAB8C0800B1058A /* TZDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				92BE3E441DAB8C0800B1058A /* TZDatePickerView.h */,
+				92BE3E451DAB8C0800B1058A /* TZDatePickerView.m */,
+				92BE3E461DAB8C0800B1058A /* TZDatePickerView.xib */,
+			);
+			path = TZDatePicker;
+			sourceTree = "<group>";
+		};
+		92BE3E471DAB8C0800B1058A /* TZPopInputView */ = {
+			isa = PBXGroup;
+			children = (
+				92BE3E481DAB8C0800B1058A /* TZPopInputView.h */,
+				92BE3E491DAB8C0800B1058A /* TZPopInputView.m */,
+				92BE3E4A1DAB8C0800B1058A /* TZPopInputView.xib */,
+			);
+			path = TZPopInputView;
+			sourceTree = "<group>";
+		};
+		92BE3E4B1DAB8C0800B1058A /* TZTimePicker */ = {
+			isa = PBXGroup;
+			children = (
+				92BE3E4C1DAB8C0800B1058A /* TZTimePickerView.h */,
+				92BE3E4D1DAB8C0800B1058A /* TZTimePickerView.m */,
+				92BE3E4E1DAB8C0800B1058A /* TZTimePickerView.xib */,
+			);
+			path = TZTimePicker;
+			sourceTree = "<group>";
+		};
 		EE2AB887BF89F3F8C766FAC4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1665,6 +1713,7 @@
 				929494421D86934400CE1E74 /* Contents.json in Resources */,
 				9254C16F1D7FBF1E003AC816 /* LaunchScreen.storyboard in Resources */,
 				9294940A1D86934400CE1E74 /* Contents.json in Resources */,
+				92BE3E541DAB8C0800B1058A /* TZTimePickerView.xib in Resources */,
 				925940881D8E987E00A01A3B /* TZImagePickerController.bundle in Resources */,
 				9294943A1D86934400CE1E74 /* Contents.json in Resources */,
 				929493FE1D86934400CE1E74 /* Contents.json in Resources */,
@@ -1689,6 +1738,7 @@
 				92BE3E411DAB89CB00B1058A /* sound.caf in Resources */,
 				9254C1C51D800D44003AC816 /* icon2@2x.png in Resources */,
 				929494371D86934400CE1E74 /* tabbar_message_center_selected_os7@2x.png in Resources */,
+				92BE3E521DAB8C0800B1058A /* TZPopInputView.xib in Resources */,
 				929493FD1D86934400CE1E74 /* navigationbar_background@2x.png in Resources */,
 				9254C1C41D800D44003AC816 /* icon1@2x.png in Resources */,
 				9254C1C71D800D44003AC816 /* pageDot.png in Resources */,
@@ -1733,6 +1783,7 @@
 				929493F71D86934400CE1E74 /* navigationbar_arrow_up@2x.png in Resources */,
 				926EBD6C1D87E900003AA841 /* ico_make.png in Resources */,
 				92FE1CBB1D91065900B6A1AC /* OneViewController.xib in Resources */,
+				92BE3E501DAB8C0800B1058A /* TZDatePickerView.xib in Resources */,
 				929494281D86934400CE1E74 /* Contents.json in Resources */,
 				9294942B1D86934400CE1E74 /* tabbar_home@2x.png in Resources */,
 				929494381D86934400CE1E74 /* Contents.json in Resources */,
@@ -1824,6 +1875,8 @@
 				9254C1641D7FBF1E003AC816 /* AppDelegate.m in Sources */,
 				925A1DB61D82A7C800E243C9 /* ZHZBadgeView.m in Sources */,
 				925940841D8E987E00A01A3B /* NSBundle+TZImagePicker.m in Sources */,
+				92BE3E531DAB8C0800B1058A /* TZTimePickerView.m in Sources */,
+				92BE3E511DAB8C0800B1058A /* TZPopInputView.m in Sources */,
 				925A1DC81D82B6C400E243C9 /* ZHZPregressLayer.m in Sources */,
 				92FE1CB61D90F1FE00B6A1AC /* UIImage+ZHZRoundRectImage.m in Sources */,
 				9294944B1D86A11000CE1E74 /* ZHZPickView.m in Sources */,
@@ -1893,6 +1946,7 @@
 				925A1DBA1D82AB7100E243C9 /* ZHZRootViewControllerManager.m in Sources */,
 				9255CA9F1D815498006A6A24 /* ZHZAlertController.m in Sources */,
 				9254C1A81D80051B003AC816 /* ZHZInfoPage.m in Sources */,
+				92BE3E4F1DAB8C0800B1058A /* TZDatePickerView.m in Sources */,
 				925940591D8E60E200A01A3B /* ZHZCustomPlaceHolderTextView.m in Sources */,
 				925940861D8E987E00A01A3B /* TZAssetModel.m in Sources */,
 				92BE3E401DAB89CB00B1058A /* SGAlertView.m in Sources */,
