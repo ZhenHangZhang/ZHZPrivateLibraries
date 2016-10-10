@@ -9,15 +9,17 @@
 #import "OneViewController.h"
 #import "UIImage+ZHZCreateBarcode.h"
 #import "ZHZViewPager.h"
-
+#import "UILabel+Wonderful.h"
 #import <YYKit/YYKit.h>
+#import "MainViewController.h"
 
 
 //设备物理尺寸
 #define screen_width [UIScreen mainScreen].bounds.size.width
 #define screen_height [UIScreen mainScreen].bounds.size.height
-@interface OneViewController ()
+@interface OneViewController ()<CAAnimationDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *ImagV;
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
 
@@ -25,7 +27,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+//self.label.text = @"iOS9 3D Touch 使用教程";
+    
+    [self.label setColorText:@"<iOS9> 3D Touch 使用教程"];
+    [self.label setFontText:@"iOS9 [3D] Touch 使用教程"];
+    [self.label setColorFontText:@"<iOS9 [3D] Touch> 使用教程"];
+    
+    
 //    self.automaticallyAdjustsScrollViewInsets = YES;
 //    NSMutableArray *imgs = [NSMutableArray array];
 //    
@@ -59,8 +67,21 @@
 //        [[UIApplication sharedApplication] openURL:url];
 //    }
     
-    [self show:@"消息通知"];
-    self.ImagV.image = [UIImage imageOfQRFromURL:@"www.baidu.com" codeSize:self.ImagV.frame.size.width red:0 green:0 blue:0 insertImage:[UIImage new]];
+//    [self show:@"消息通知"];
+//    self.ImagV.image = [UIImage imageOfQRFromURL:@"www.baidu.com" codeSize:self.ImagV.frame.size.width red:0 green:0 blue:0 insertImage:[UIImage new]];
+    
+    
+    CATransition *transition = [CATransition animation];
+    transition.duration = 0.5f;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionPush;
+    transition.subtype = kCATransitionFromLeft;
+    transition.delegate = self;
+    [self.navigationController.view.layer addAnimation:transition forKey:nil];
+    MainViewController * fc = [[MainViewController alloc]init];
+    fc.view.backgroundColor = [UIColor whiteColor];
+    [self.navigationController pushViewController:fc animated:NO];
+    
 }
 -(void)show:(NSString*)msg{
     CGFloat padding = 10;

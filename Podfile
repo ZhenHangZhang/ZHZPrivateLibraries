@@ -13,10 +13,9 @@ pod 'FMDB'
 pod 'SDWebImage'
 pod 'XHTagView'
 pod 'MBProgressHUD', '~> 0.9.1'
-pod 'YYKit'
 pod 'UMengSocialCOM'
 pod 'MJExtension'
 pod 'JSONModel'
-
+pod 'YYKit'
 
 end

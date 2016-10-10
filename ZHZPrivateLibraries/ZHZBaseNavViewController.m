@@ -43,9 +43,6 @@
      appearance.backgroundColor = [UIColor redColor];
      appearance.shadowImage = [ZHZImageCustom imageWithColor:[UIColor clearColor]];
      */
-   
-    
-    
     
     // 设置文字属性
     NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
