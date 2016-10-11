@@ -48,7 +48,7 @@
     NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
     textAttrs[NSForegroundColorAttributeName] = ZHZ_RGBValue(41, 45, 103);
     // UITextAttributeFont  --> NSFontAttributeName(iOS7)
-    textAttrs[NSFontAttributeName] = HMNavigationTitleFont;
+//    textAttrs[NSFontAttributeName] = HMNavigationTitleFont;
     // UIOffsetZero是结构体, 只要包装成NSValue对象, 才能放进字典\数组中
 //    textAttrs[NSShadowAttributeName] = [NSValue valueWithUIOffset:UIOffsetZero];
     [appearance setTitleTextAttributes:textAttrs];

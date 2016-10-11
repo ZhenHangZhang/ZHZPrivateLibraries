@@ -17,12 +17,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    
-    
-    
-
-
 }
 
 -(void)pop{
@@ -41,7 +35,7 @@
 }
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
 
-    [self pop];
+//    [self pop];
 }
 
 - (void)didReceiveMemoryWarning {

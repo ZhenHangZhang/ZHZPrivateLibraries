@@ -12,8 +12,8 @@
 #import "UILabel+Wonderful.h"
 #import <YYKit/YYKit.h>
 #import "MainViewController.h"
-
-
+#import "ZHZCardViewController.h"
+#import "ZHZTxtViewController.h"
 //设备物理尺寸
 #define screen_width [UIScreen mainScreen].bounds.size.width
 #define screen_height [UIScreen mainScreen].bounds.size.height
@@ -67,7 +67,7 @@
 //        [[UIApplication sharedApplication] openURL:url];
 //    }
     
-//    [self show:@"消息通知"];
+    [self show:@"消息通知"];
 //    self.ImagV.image = [UIImage imageOfQRFromURL:@"www.baidu.com" codeSize:self.ImagV.frame.size.width red:0 green:0 blue:0 insertImage:[UIImage new]];
     
     
@@ -78,7 +78,7 @@
     transition.subtype = kCATransitionFromLeft;
     transition.delegate = self;
     [self.navigationController.view.layer addAnimation:transition forKey:nil];
-    MainViewController * fc = [[MainViewController alloc]init];
+    ZHZTxtViewController * fc = [[ZHZTxtViewController alloc]init];
     fc.view.backgroundColor = [UIColor whiteColor];
     [self.navigationController pushViewController:fc animated:NO];
     
@@ -107,8 +107,6 @@
             [label removeFromSuperview];
         }];
     }];
-
-    
 }
 /*
 #pragma mark - Navigation
