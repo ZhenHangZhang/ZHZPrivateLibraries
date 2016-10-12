@@ -122,6 +122,8 @@
 		928435BB1D9E144E00F80526 /* DazSmoke.png in Resources */ = {isa = PBXBuildFile; fileRef = 928435B81D9E144E00F80526 /* DazSmoke.png */; };
 		928435BC1D9E144E00F80526 /* SmokeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 928435BA1D9E144E00F80526 /* SmokeView.m */; };
 		928435BF1D9E166700F80526 /* ZHZBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 928435BE1D9E166700F80526 /* ZHZBorderView.m */; };
+		928D62D91DADD7D0008906DA /* ZHZBackGroundAnimatedImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 928D62D81DADD7D0008906DA /* ZHZBackGroundAnimatedImagesView.m */; };
+		928D62DC1DADE2EB008906DA /* ZHZCustomUnderLineTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 928D62DB1DADE2EB008906DA /* ZHZCustomUnderLineTextField.m */; };
 		929493751D868D7F00CE1E74 /* ZHZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 929493721D868D7F00CE1E74 /* ZHZTabBar.m */; };
 		929493761D868D7F00CE1E74 /* ZHZTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 929493741D868D7F00CE1E74 /* ZHZTabBarVC.m */; };
 		929493F41D86934400CE1E74 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 929493791D86934400CE1E74 /* Contents.json */; };
@@ -450,6 +452,10 @@
 		928435BA1D9E144E00F80526 /* SmokeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmokeView.m; sourceTree = "<group>"; };
 		928435BD1D9E166700F80526 /* ZHZBorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZBorderView.h; sourceTree = "<group>"; };
 		928435BE1D9E166700F80526 /* ZHZBorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZBorderView.m; sourceTree = "<group>"; };
+		928D62D71DADD7D0008906DA /* ZHZBackGroundAnimatedImagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZBackGroundAnimatedImagesView.h; sourceTree = "<group>"; };
+		928D62D81DADD7D0008906DA /* ZHZBackGroundAnimatedImagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZBackGroundAnimatedImagesView.m; sourceTree = "<group>"; };
+		928D62DA1DADE2EB008906DA /* ZHZCustomUnderLineTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZCustomUnderLineTextField.h; sourceTree = "<group>"; };
+		928D62DB1DADE2EB008906DA /* ZHZCustomUnderLineTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZCustomUnderLineTextField.m; sourceTree = "<group>"; };
 		929493711D868D7F00CE1E74 /* ZHZTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZTabBar.h; sourceTree = "<group>"; };
 		929493721D868D7F00CE1E74 /* ZHZTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZTabBar.m; sourceTree = "<group>"; };
 		929493731D868D7F00CE1E74 /* ZHZTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZTabBarVC.h; sourceTree = "<group>"; };
@@ -977,6 +983,8 @@
 				925940271D8E3E2500A01A3B /* ZHZCustomLoadingAnimationView.h */,
 				925940281D8E3E2500A01A3B /* ZHZCustomLoadingAnimationView.m */,
 				925940571D8E60E200A01A3B /* ZHZCustomPlaceHolderTextView.h */,
+				928D62DA1DADE2EB008906DA /* ZHZCustomUnderLineTextField.h */,
+				928D62DB1DADE2EB008906DA /* ZHZCustomUnderLineTextField.m */,
 				925940581D8E60E200A01A3B /* ZHZCustomPlaceHolderTextView.m */,
 				9259405A1D8E623500A01A3B /* ZHZCustomSegmentView.h */,
 				9259405B1D8E623500A01A3B /* ZHZCustomSegmentView.m */,
@@ -986,6 +994,8 @@
 				928435B61D9E110800F80526 /* ZHZLoveHeartView.m */,
 				9273ABB11DACDA4500468C31 /* ZHZCardAnimotion.h */,
 				9273ABB21DACDA4500468C31 /* ZHZCardAnimotion.m */,
+				928D62D71DADD7D0008906DA /* ZHZBackGroundAnimatedImagesView.h */,
+				928D62D81DADD7D0008906DA /* ZHZBackGroundAnimatedImagesView.m */,
 			);
 			name = CUSTOMVIEW;
 			path = "签名版";
@@ -1992,6 +2002,7 @@
 				92BE3E3D1DAB89CB00B1058A /* ScanSuccessJumpVC.m in Sources */,
 				926EBD661D87E29C003AA841 /* ZHZImageScrollViewLoop.m in Sources */,
 				9254C18E1D7FE4CD003AC816 /* ZHZDataCache.m in Sources */,
+				928D62D91DADD7D0008906DA /* ZHZBackGroundAnimatedImagesView.m in Sources */,
 				925940401D8E5D6F00A01A3B /* UIView+Frame.m in Sources */,
 				9273ABB31DACDA4500468C31 /* ZHZCardAnimotion.m in Sources */,
 				925940501D8E5FBA00A01A3B /* UIImage+Addition.m in Sources */,
@@ -2023,6 +2034,7 @@
 				9254C19A1D7FE967003AC816 /* ZHZ_GCD.m in Sources */,
 				9254C1AE1D80058A003AC816 /* ZHZInfoGuidScrollView.m in Sources */,
 				92BE3E3C1DAB89CB00B1058A /* CIImage+SGExtension.m in Sources */,
+				928D62DC1DADE2EB008906DA /* ZHZCustomUnderLineTextField.m in Sources */,
 				9259406A1D8E6E5F00A01A3B /* ZHZCustomShareManager.m in Sources */,
 				925940441D8E5E1000A01A3B /* MBProgressHUD+NHAddition.m in Sources */,
 				9259404C1D8E5EB300A01A3B /* UIBarButtonItem+Addition.m in Sources */,

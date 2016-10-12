@@ -64,7 +64,7 @@
     // 设置普通状态的文字属性
     NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
     textAttrs[NSForegroundColorAttributeName] = ZHZ_RGBValue(41, 45, 103);
-    textAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:15];
+//    textAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:15];
 //    textAttrs[NSShadowAttributeName] = [NSValue valueWithUIOffset:UIOffsetZero];
     [appearance setTitleTextAttributes:textAttrs forState:UIControlStateNormal];
     

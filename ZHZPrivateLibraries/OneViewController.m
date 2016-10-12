@@ -14,12 +14,20 @@
 #import "MainViewController.h"
 #import "ZHZCardViewController.h"
 #import "ZHZTxtViewController.h"
+#import "ZHZBackGroundAnimatedImagesView.h"
+
+
+
+
+
+
 //设备物理尺寸
 #define screen_width [UIScreen mainScreen].bounds.size.width
 #define screen_height [UIScreen mainScreen].bounds.size.height
-@interface OneViewController ()<CAAnimationDelegate>
+@interface OneViewController ()<CAAnimationDelegate,ZHZAnimatedImagesViewDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *ImagV;
 @property (weak, nonatomic) IBOutlet UILabel *label;
+@property(nonatomic,strong)ZHZBackGroundAnimatedImagesView *animatedImagesView;
 
 @end
 
@@ -27,11 +35,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    //添加动态图
+    self.animatedImagesView = [[ZHZBackGroundAnimatedImagesView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
+    [self.view addSubview:self.animatedImagesView];
+    self.animatedImagesView.delegate = self;
+
+    [self.view insertSubview:self.animatedImagesView belowSubview:self.label];
+    
+    
+    [self.animatedImagesView startAnimating];
+
+    
+    
+    
+    
+    
 //self.label.text = @"iOS9 3D Touch 使用教程";
     
-    [self.label setColorText:@"<iOS9> 3D Touch 使用教程"];
-    [self.label setFontText:@"iOS9 [3D] Touch 使用教程"];
-    [self.label setColorFontText:@"<iOS9 [3D] Touch> 使用教程"];
+//    [self.label setColorText:@"<iOS9> 3D Touch 使用教程"];
+//    [self.label setFontText:@"iOS9 [3D] Touch 使用教程"];
+//    [self.label setColorFontText:@"<iOS9 [3D] Touch> 使用教程"];
     
     
 //    self.automaticallyAdjustsScrollViewInsets = YES;
@@ -83,6 +108,25 @@
     [self.navigationController pushViewController:fc animated:NO];
     
 }
+- (NSUInteger)animatedImagesNumberOfImages:(ZHZBackGroundAnimatedImagesView*)animatedImagesView
+{
+    return 2;
+}
+
+- (UIImage*)animatedImagesView:(ZHZBackGroundAnimatedImagesView*)animatedImagesView imageAtIndex:(NSUInteger)index
+{
+    
+    if (index == 0) {
+        return [UIImage imageNamed:@"bg1"];
+        
+    }else{
+        
+        return [UIImage imageNamed:@"bg2"];
+        
+    }
+    
+}
+
 -(void)show:(NSString*)msg{
     CGFloat padding = 10;
     
