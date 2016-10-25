@@ -27,4 +27,7 @@ typedef void(^ZHZLocationManagerDidUpdateLocationHandle)(CLLocation *newLocation
 
 /** 是否有经纬度*/
 @property (nonatomic, assign) BOOL hasLocation;
+
+
+
 @end

@@ -17,5 +17,10 @@ pod 'UMengSocialCOM'
 pod 'MJExtension'
 pod 'JSONModel'
 pod 'YYKit'
-
+pod 'MagicalRecord'
+pod 'SVProgressHUD'
+pod 'IQKeyboardManager', '~> 4.0.1'
+pod 'DZNEmptyDataSet'
+pod 'KMNavigationBarTransition'
+pod 'MMPopupView'
 end

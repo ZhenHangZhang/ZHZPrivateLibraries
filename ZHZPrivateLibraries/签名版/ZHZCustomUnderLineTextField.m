@@ -38,8 +38,7 @@
     //Start a new Path
     CGContextBeginPath(context);
     
-    //Find the number of lines in our textView + add a bit more height to draw lines in the empty part of the view
-    //NSUInteger numberOfLines = (self.contentSize.height + self.bounds.size.height) / self.font.leading;
+    
     
     //Set the line offset from the baseline. (I'm sure there's a concrete way to calculate this.)
     CGFloat baselineOffset = 45.0f;

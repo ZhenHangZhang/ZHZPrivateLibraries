@@ -1,0 +1,22 @@
+//
+//  ZHZPrivateLivraries.pch
+//  ZHZPrivateLibraries
+//
+//  Created by zhanghangzhen on 2016/10/24.
+//  Copyright © 2016年 zhanghangzhen. All rights reserved.
+//
+
+//#import <YYKit/YYKit.h>
+#ifdef __OBJC__
+
+
+#import <YYKit/YYKit.h>
+#import "ZHZUtils.h"
+#import "UIButton+Block.h"
+#import "UITabBar+Badge.h"
+#import "UINavigationBar+CoverView.h"
+#import <FMDB/FMDB.h>
+#import "MagicalRecord.h"
+#import "SVProgressHUD.h"
+
+#endif

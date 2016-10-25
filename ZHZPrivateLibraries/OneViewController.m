@@ -11,6 +11,7 @@
 #import "ZHZViewPager.h"
 #import "UILabel+Wonderful.h"
 #import <YYKit/YYKit.h>
+
 #import "MainViewController.h"
 #import "ZHZCardViewController.h"
 #import "ZHZTxtViewController.h"
@@ -41,15 +42,9 @@
     self.animatedImagesView = [[ZHZBackGroundAnimatedImagesView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
     [self.view addSubview:self.animatedImagesView];
     self.animatedImagesView.delegate = self;
-
     [self.view insertSubview:self.animatedImagesView belowSubview:self.label];
-    
-    
     [self.animatedImagesView startAnimating];
 
-    
-    
-    
     
     
 //self.label.text = @"iOS9 3D Touch 使用教程";

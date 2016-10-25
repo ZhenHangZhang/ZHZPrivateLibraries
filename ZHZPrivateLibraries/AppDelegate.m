@@ -18,6 +18,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [MagicalRecord setupAutoMigratingCoreDataStack];
+    
     NSLog(@"垃圾git客户端竟然不显示");
     NSLog(@"是否是通过Schemes打开的%@",launchOptions);
     if (launchOptions[UIApplicationLaunchOptionsURLKey]) {
@@ -55,7 +58,7 @@
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+      [MagicalRecord cleanUp];
 }
 
 @end

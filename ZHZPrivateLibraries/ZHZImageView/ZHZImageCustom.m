@@ -12,7 +12,7 @@
 
 #define LF_SWAP(a, b)  do { __typeof__(a) _tmp_ = (a); (a) = (b); (b) = _tmp_; } while (0)
 
-static inline CGFloat DegreesToRadians(CGFloat degrees) {
+static inline CGFloat DegreesToRadians1(CGFloat degrees) {
     return degrees * M_PI / 180;
 }
 

@@ -12,7 +12,7 @@
 #import "ZHZBaseNavViewController.h"
 #import "OneViewController.h"
 #import "TwoViewController.h"
-
+#import "ThreeViewController.h"
 
 
 #define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
@@ -58,6 +58,12 @@
 
     TwoViewController *discover = [[TwoViewController alloc] init];
     [self addOneChlildVc:discover title:@"用户" imageName:@"tabbar_discover" selectedImageName:@"tabbar_discover_selected"];
+    
+    
+    
+    ThreeViewController*cover = [[ThreeViewController alloc] init];
+    [self addOneChlildVc:cover title:@"用户" imageName:@"tabbar_discover" selectedImageName:@"tabbar_discover_selected"];
+    
     }
 
 /**
