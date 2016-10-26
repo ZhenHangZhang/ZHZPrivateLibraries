@@ -62,7 +62,7 @@
     
     
     ThreeViewController*cover = [[ThreeViewController alloc] init];
-    [self addOneChlildVc:cover title:@"用户" imageName:@"tabbar_discover" selectedImageName:@"tabbar_discover_selected"];
+    [self addOneChlildVc:cover title:@"测试" imageName:@"tabbar_discover" selectedImageName:@"tabbar_discover_selected"];
     
     }
 

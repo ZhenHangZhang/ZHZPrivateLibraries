@@ -16,22 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-//    [self setDefaultNavigationBar];
-    [self setBadgeValue:100 atIndex:2];
+    [self setBadgeValue:100 atIndex:3];
     [self setNavigationBarBackgroundImage:[UIImage imageNamed:@"navigationbar_background"] tintColor:[UIColor redColor] textColor:[UIColor purpleColor] statusBarStyle:UIStatusBarStyleLightContent];
-
 }
 - (IBAction)test:(id)sender {
     [self showErrorWithStatus:@"网络获取失败"];
-    
+    [self setBadgeValue:0 atIndex:3];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 /*
 #pragma mark - Navigation
 

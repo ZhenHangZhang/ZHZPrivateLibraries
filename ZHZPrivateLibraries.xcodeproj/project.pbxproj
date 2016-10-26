@@ -255,6 +255,8 @@
 		92BE3E521DAB8C0800B1058A /* TZPopInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92BE3E4A1DAB8C0800B1058A /* TZPopInputView.xib */; };
 		92BE3E531DAB8C0800B1058A /* TZTimePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BE3E4D1DAB8C0800B1058A /* TZTimePickerView.m */; };
 		92BE3E541DAB8C0800B1058A /* TZTimePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92BE3E4E1DAB8C0800B1058A /* TZTimePickerView.xib */; };
+		92FB063D1DC0750B00840D2F /* UIImage+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FB063C1DC0750B00840D2F /* UIImage+Compression.m */; };
+		92FB06431DC0754000840D2F /* NetWorkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FB06421DC0754000840D2F /* NetWorkingManager.m */; };
 		92FE1CAD1D90DAF300B6A1AC /* ZHZSplashScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FE1CAC1D90DAF300B6A1AC /* ZHZSplashScreenView.m */; };
 		92FE1CB01D90DC3400B6A1AC /* ZHZSplashScreenDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FE1CAF1D90DC3400B6A1AC /* ZHZSplashScreenDataManager.m */; };
 		92FE1CB31D90F14A00B6A1AC /* UIImage+ZHZCreateBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FE1CB21D90F14A00B6A1AC /* UIImage+ZHZCreateBarcode.m */; };
@@ -651,6 +653,10 @@
 		92BE3E4C1DAB8C0800B1058A /* TZTimePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZTimePickerView.h; sourceTree = "<group>"; };
 		92BE3E4D1DAB8C0800B1058A /* TZTimePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZTimePickerView.m; sourceTree = "<group>"; };
 		92BE3E4E1DAB8C0800B1058A /* TZTimePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TZTimePickerView.xib; sourceTree = "<group>"; };
+		92FB063B1DC0750B00840D2F /* UIImage+Compression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Compression.h"; sourceTree = "<group>"; };
+		92FB063C1DC0750B00840D2F /* UIImage+Compression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Compression.m"; sourceTree = "<group>"; };
+		92FB06411DC0754000840D2F /* NetWorkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkingManager.h; sourceTree = "<group>"; };
+		92FB06421DC0754000840D2F /* NetWorkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkingManager.m; sourceTree = "<group>"; };
 		92FE1CAB1D90DAF300B6A1AC /* ZHZSplashScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZSplashScreenView.h; sourceTree = "<group>"; };
 		92FE1CAC1D90DAF300B6A1AC /* ZHZSplashScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZSplashScreenView.m; sourceTree = "<group>"; };
 		92FE1CAE1D90DC3400B6A1AC /* ZHZSplashScreenDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZSplashScreenDataManager.h; sourceTree = "<group>"; };
@@ -802,6 +808,8 @@
 		9254C1891D7FC04E003AC816 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				92FB06411DC0754000840D2F /* NetWorkingManager.h */,
+				92FB06421DC0754000840D2F /* NetWorkingManager.m */,
 				9254C1861D7FC025003AC816 /* ZHZTools.h */,
 				9254C1871D7FC025003AC816 /* ZHZTools.m */,
 				925940601D8E64B100A01A3B /* ZHZUtils.h */,
@@ -1185,6 +1193,8 @@
 		928EDED91DBDCD8000BD9ADE /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				92FB063B1DC0750B00840D2F /* UIImage+Compression.h */,
+				92FB063C1DC0750B00840D2F /* UIImage+Compression.m */,
 				928EDEDA1DBDCD8000BD9ADE /* NSString+TSTime.h */,
 				928EDEDB1DBDCD8000BD9ADE /* NSString+TSTime.m */,
 				928EDEDC1DBDCD8000BD9ADE /* UIAlertView+CallBack.h */,
@@ -2100,6 +2110,7 @@
 				9294944B1D86A11000CE1E74 /* ZHZPickView.m in Sources */,
 				929494661D86A4C800CE1E74 /* bitstream.c in Sources */,
 				92FE1CC91D913DC400B6A1AC /* ZHZCustomMenuItem.m in Sources */,
+				92FB06431DC0754000840D2F /* NetWorkingManager.m in Sources */,
 				928EDEF41DBDCD8000BD9ADE /* UINavigationBar+CoverView.m in Sources */,
 				9259405C1D8E623500A01A3B /* ZHZCustomSegmentView.m in Sources */,
 				926EBD621D87E081003AA841 /* ZHZTableViewRefreshHeader.m in Sources */,
@@ -2195,6 +2206,7 @@
 				92FE1CB01D90DC3400B6A1AC /* ZHZSplashScreenDataManager.m in Sources */,
 				925940411D8E5D6F00A01A3B /* UIView+Layer.m in Sources */,
 				925940291D8E3E2500A01A3B /* ZHZCustomLoadingAnimationView.m in Sources */,
+				92FB063D1DC0750B00840D2F /* UIImage+Compression.m in Sources */,
 				92FE1CBA1D91065900B6A1AC /* OneViewController.m in Sources */,
 				925A1DB01D82A11000E243C9 /* UIImage+ZHZCategory.m in Sources */,
 				9259406D1D8E7C3600A01A3B /* ZHZCustomTableView.m in Sources */,

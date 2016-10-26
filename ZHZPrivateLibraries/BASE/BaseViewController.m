@@ -31,7 +31,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self setDefaultNavigationBar];
+//    [self setDefaultNavigationBar];
 }
 
 - (void)dealloc {
@@ -221,6 +221,7 @@
     _badge.hidden = NO;
     _badge.text = [NSString stringWithFormat:@"%@",@(value)];
 }
+
 
 - (YYLabel *)badge {
     if (!_badge) {
