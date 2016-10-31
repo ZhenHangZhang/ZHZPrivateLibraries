@@ -61,6 +61,19 @@
  */
 + (BOOL)validateNickname:(NSString *)nickname;
 
+//MD5不可逆加密
++(NSString *)md5HexDigest:(NSString *)input;
+
+//AES加解密
++(NSString*)aesEncryptDigest:(NSString*)msg;
+
++(NSString*)aesDecryptDigest:(NSString*)msg;
+//base64加解密
++(NSString *)base64EncodeString:(NSString *)string;
+//对base64编码后的字符串进行解码
++(NSString *)base64DecodeString:(NSString *)string;
+
+
 
 
 

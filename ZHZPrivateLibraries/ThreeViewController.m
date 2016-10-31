@@ -26,7 +26,7 @@
                                                            100,
                                                            self.view.frame.size.width-40,
                                                            300)];
-    [self.view addSubview:view];
+//    [self.view addSubview:view];
     
     //设置选中的日期，格式 yyyy-MM-dd (数组)
     view.selectedArray = @[@"2016-08-23",
@@ -71,14 +71,14 @@
     
     
     
-    [Singleton sharedInstance].socketHost = @"192.186.100.21";// host设定
-    [Singleton sharedInstance].socketPort = 10045;// port设定
-    // 在连接前先进行手动断开
-    [Singleton sharedInstance].socket.userData = SocketOfflineByUser;
-    [[Singleton sharedInstance] cutOffSocket];
-    // 确保断开后再连，如果对一个正处于连接状态的socket进行连接，会出现崩溃
-    [Singleton sharedInstance].socket.userData = SocketOfflineByServer;
-    [[Singleton sharedInstance] socketConnectHost];
+//    [Singleton sharedInstance].socketHost = @"192.186.100.21";// host设定
+//    [Singleton sharedInstance].socketPort = 10045;// port设定
+//    // 在连接前先进行手动断开
+//    [Singleton sharedInstance].socket.userData = SocketOfflineByUser;
+//    [[Singleton sharedInstance] cutOffSocket];
+//    // 确保断开后再连，如果对一个正处于连接状态的socket进行连接，会出现崩溃
+//    [Singleton sharedInstance].socket.userData = SocketOfflineByServer;
+//    [[Singleton sharedInstance] socketConnectHost];
 
     
     
@@ -88,6 +88,11 @@
 - (IBAction)test:(id)sender {
     [self showErrorWithStatus:@"网络获取失败"];
     [self setBadgeValue:0 atIndex:3];
+    
+    NSLog(@"%@",[ZHZUtils md5HexDigest:@"网络获取失败"]);
+    
+    
+    
 }
 
 

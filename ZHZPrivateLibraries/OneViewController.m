@@ -18,6 +18,7 @@
 #import "ZHZBackGroundAnimatedImagesView.h"
 
 
+#import "ZHZTableViewCell.h"
 
 
 
@@ -25,19 +26,31 @@
 //设备物理尺寸
 #define screen_width [UIScreen mainScreen].bounds.size.width
 #define screen_height [UIScreen mainScreen].bounds.size.height
-@interface OneViewController ()<CAAnimationDelegate,ZHZAnimatedImagesViewDelegate>
+@interface OneViewController ()<CAAnimationDelegate,ZHZAnimatedImagesViewDelegate,UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UIImageView *ImagV;
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property(nonatomic,strong)ZHZBackGroundAnimatedImagesView *animatedImagesView;
+@property (weak, nonatomic) IBOutlet UITableView *table;
 
 @end
+
+
+//第一中cell的复用标识
+static  NSString* firseCellid = @"firseCell";
+//第2中cell的复用标识
+static  NSString* secCellid = @"secCellid";
+//第3中cell的复用标识
+static  NSString* threeCellid = @"threeCellid";
+//第4中cell的复用标识
+static  NSString* fourCellid = @"fourCellid";
 
 @implementation OneViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
+
+    [self.table registerNib:[UINib nibWithNibName:@"ZHZTableViewCell" bundle:nil] forCellReuseIdentifier:threeCellid];
+ 
     //添加动态图
     self.animatedImagesView = [[ZHZBackGroundAnimatedImagesView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
     [self.view addSubview:self.animatedImagesView];
@@ -74,6 +87,24 @@
     
 //    [self.view addSubview:pagerView];
 
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+
+    return 20;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    return 60;
+}
+-(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    ZHZTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:firseCellid];
+    if (!cell) {
+        cell = [[ZHZTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:firseCellid];
+    }
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning {
