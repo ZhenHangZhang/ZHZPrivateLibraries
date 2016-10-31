@@ -284,6 +284,7 @@
 		929494701D86AC7B00CE1E74 /* ZHZCustomFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 9294946F1D86AC7B00CE1E74 /* ZHZCustomFMDB.m */; };
 		92A88D931DC6DBC800073366 /* ZHZTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A88D911DC6DBC800073366 /* ZHZTableViewCell.m */; };
 		92A88D941DC6DBC800073366 /* ZHZTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92A88D921DC6DBC800073366 /* ZHZTableViewCell.xib */; };
+		92A88D9A1DC70B0D00073366 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A88D991DC70B0D00073366 /* Person.m */; };
 		92BE3E3C1DAB89CB00B1058A /* CIImage+SGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BE3E2C1DAB89CA00B1058A /* CIImage+SGExtension.m */; };
 		92BE3E3D1DAB89CB00B1058A /* ScanSuccessJumpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BE3E2F1DAB89CA00B1058A /* ScanSuccessJumpVC.m */; };
 		92BE3E3E1DAB89CB00B1058A /* SGGenerateQRCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BE3E311DAB89CA00B1058A /* SGGenerateQRCodeVC.m */; };
@@ -732,6 +733,8 @@
 		92A88D901DC6DBC800073366 /* ZHZTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZTableViewCell.h; sourceTree = "<group>"; };
 		92A88D911DC6DBC800073366 /* ZHZTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZTableViewCell.m; sourceTree = "<group>"; };
 		92A88D921DC6DBC800073366 /* ZHZTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHZTableViewCell.xib; sourceTree = "<group>"; };
+		92A88D981DC70B0D00073366 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		92A88D991DC70B0D00073366 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		92BE3E2B1DAB89CA00B1058A /* CIImage+SGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CIImage+SGExtension.h"; sourceTree = "<group>"; };
 		92BE3E2C1DAB89CA00B1058A /* CIImage+SGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CIImage+SGExtension.m"; sourceTree = "<group>"; };
 		92BE3E2E1DAB89CA00B1058A /* ScanSuccessJumpVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanSuccessJumpVC.h; sourceTree = "<group>"; };
@@ -906,6 +909,8 @@
 				92921A721DBF0B4200A50110 /* ThreeViewController.h */,
 				92921A731DBF0B4200A50110 /* ThreeViewController.m */,
 				92921A741DBF0B4200A50110 /* ThreeViewController.xib */,
+				92A88D981DC70B0D00073366 /* Person.h */,
+				92A88D991DC70B0D00073366 /* Person.m */,
 				9254C1681D7FBF1E003AC816 /* Main.storyboard */,
 				9254C18A1D7FC0DA003AC816 /* ZHZHeader.h */,
 				928EDED81DBDC79F00BD9ADE /* ZHZPrivateLivraries.pch */,
@@ -2430,6 +2435,7 @@
 				928EDEF61DBDCD8000BD9ADE /* UITableView+Custom.m in Sources */,
 				925A1DB31D82A5F600E243C9 /* ZHZQQRedButtomView.m in Sources */,
 				9259408A1D8E987E00A01A3B /* TZPhotoPickerController.m in Sources */,
+				92A88D9A1DC70B0D00073366 /* Person.m in Sources */,
 				925940351D8E5B8B00A01A3B /* NSString+Size.m in Sources */,
 				92FE1CB31D90F14A00B6A1AC /* UIImage+ZHZCreateBarcode.m in Sources */,
 				9294946C1D86A4C800CE1E74 /* split.c in Sources */,

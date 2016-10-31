@@ -49,6 +49,11 @@ static  NSString* fourCellid = @"fourCellid";
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    UIView *bg = [[UIView alloc] initWithFrame:CGRectMake(0, -20, self.navigationController.navigationBar.frame.size.width, 64)];
+    bg.backgroundColor = [UIColor colorWithWhite:0 alpha:1];
+    
+    [self.navigationController.navigationBar insertSubview:bg atIndex:0];
+    
     [self.table registerNib:[UINib nibWithNibName:@"ZHZTableViewCell" bundle:nil] forCellReuseIdentifier:threeCellid];
  
     //添加动态图
@@ -106,7 +111,12 @@ static  NSString* fourCellid = @"fourCellid";
     }
     return cell;
 }
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    MainViewController * fc = [[MainViewController alloc]init];
+    fc.view.backgroundColor = [UIColor whiteColor];
+    [self.navigationController pushViewController:fc animated:NO];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

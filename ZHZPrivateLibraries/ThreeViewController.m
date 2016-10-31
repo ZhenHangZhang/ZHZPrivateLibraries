@@ -9,6 +9,10 @@
 #import "ThreeViewController.h"
 #import "Singleton.h"
 #import "YQCalendarView.h"
+#import <MagicalRecord/MagicalRecord.h>
+#import "Person.h"
+
+
 
 
 @interface ThreeViewController ()
@@ -90,8 +94,7 @@
     [self setBadgeValue:0 atIndex:3];
     
     NSLog(@"%@",[ZHZUtils md5HexDigest:@"网络获取失败"]);
-    
-    
+ 
     
 }
 
