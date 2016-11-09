@@ -87,7 +87,6 @@ static const NSTimeInterval oneDay = 24 * 60 * 60;
     [formatter setDateFormat:format];
     [formatter setLocale:[NSLocale currentLocale]];
     return [formatter stringFromDate:date];
-    
 }
 +(BOOL)isPhoneNumber:(NSString*)num{
     NSString * MOBILE = @"^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$";

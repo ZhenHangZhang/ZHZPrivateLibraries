@@ -10,9 +10,17 @@
 #import "Singleton.h"
 #import "YQCalendarView.h"
 #import <MagicalRecord/MagicalRecord.h>
-#import "Person.h"
+
+#import "StatusMessageHandle.h"
+#import "MessageView.h"
+#import "TZTimePickerView.h"
+#import "NSString+Encryption.h"
 
 
+#import "EncryptionVC.h"
+
+
+static NSString *aeskey = @"zhanghangzhen";
 
 
 @interface ThreeViewController ()
@@ -25,7 +33,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self performSelector:@selector(showMessageEvent) withObject:nil afterDelay:5.f];
+   
+    [self aesCBCTest];
     view = [[YQCalendarView alloc]initWithFrame:CGRectMake(20,
                                                            100,
                                                            self.view.frame.size.width-40,
@@ -89,14 +99,41 @@
     [self setBadgeValue:100 atIndex:3];
     [self setNavigationBarBackgroundImage:[UIImage imageNamed:@"navigationbar_background"] tintColor:[UIColor redColor] textColor:[UIColor purpleColor] statusBarStyle:UIStatusBarStyleLightContent];
 }
+
+- (void)showMessageEvent {
+    
+    [StatusMessageHandle showAndHideDuration:2.f];
+    [StatusMessageHandle showWithView:[MessageView messageViewWithTitle:@"有心内容更新了" backgroundColor:[UIColor redColor]]
+                     hideAfterSeconds:3.f];
+}
 - (IBAction)test:(id)sender {
     [self showErrorWithStatus:@"网络获取失败"];
     [self setBadgeValue:0 atIndex:3];
-    
+    EncryptionVC *vc = [[EncryptionVC alloc]init];
+    vc.view.backgroundColor = [UIColor whiteColor];
+    [self.navigationController pushViewController:vc animated:YES];
     NSLog(@"%@",[ZHZUtils md5HexDigest:@"网络获取失败"]);
- 
-    
 }
 
-
+- (void)aesCBCTest {
+    NSString *plainText = @"zhang1992";
+    
+    NSString *key128 = @"HIJKLMNOPQABCDEF";
+    // 16进制字符串
+    NSString *key128Hex = @"30313233343536373839414243444546";
+    
+    NSString *iv = @"HIJKLMNOPQABCDEF";
+    // 16进制字符串
+    NSString *ivHex = @"30313233343536373839414243444546";
+    
+    NSString *aesBase64 = [plainText aesEncryptWithKey:key128 iv:iv];
+    NSData *aesData = [plainText aesEncryptWithDataKey:[key128 dataUsingEncoding:NSUTF8StringEncoding] dataIv:[iv dataUsingEncoding:NSUTF8StringEncoding]];
+    //    NSLog(@"SecurityResult加密：\r\n%@ --- %@",result.base64,result.hexLower);
+    NSLog(@"NSString+Encryption加密：\r\n%@ --- %@",aesBase64,aesData);
+    
+    // 解密
+    NSData *data = [NSString aesDecryptWithData:aesData dataKey:[key128 dataUsingEncoding:NSUTF8StringEncoding] dataIv:[iv dataUsingEncoding:NSUTF8StringEncoding]];
+    NSString *decryptStr = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+    NSLog(@"解密：%@ --- %@",decryptStr,data);
+}
 @end

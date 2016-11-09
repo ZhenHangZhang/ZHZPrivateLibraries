@@ -24,8 +24,6 @@
 -(void)moveBackCards;
 
 -(void)adjustOtherCards;
-
-
 @end
 @interface ZHZCardAnimotion : UIView
 

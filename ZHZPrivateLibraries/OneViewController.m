@@ -165,7 +165,6 @@ static  NSString* fourCellid = @"fourCellid";
 
 -(void)show:(NSString*)msg{
     CGFloat padding = 10;
-    
     YYLabel *label = [YYLabel new];
     label.text = msg;
     label.font = [UIFont systemFontOfSize:16];
@@ -175,7 +174,6 @@ static  NSString* fourCellid = @"fourCellid";
     label.width = self.view.width;
     label.textContainerInset = UIEdgeInsetsMake(padding, padding, padding, padding);
     label.height = [msg heightForFont:label.font width:label.width] + 2 * padding;
-    
     label.bottom = (kiOS7Later ? 64 : 0);
     [self.view addSubview:label];
     [UIView animateWithDuration:0.3 animations:^{
