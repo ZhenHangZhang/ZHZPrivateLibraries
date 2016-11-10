@@ -176,10 +176,10 @@
     -----END PUBLIC KEY-----\
     ";
     
-    NSString *encWithPubKey = [RSA encryptString:plainText publicKey:publicKey];
-    NSString *decWithPrivKey = [RSA decryptString:encWithPubKey privateKey:privateKey];
+//    NSString *encWithPubKey = [RSA encryptString:plainText publicKey:publicKey];
+//    NSString *decWithPrivKey = [RSA decryptString:encWithPubKey privateKey:privateKey];
     
-    NSLog(@"RSA:%@ --- %@",encWithPubKey,decWithPrivKey);
+//    NSLog(@"RSA:%@ --- %@",encWithPubKey,decWithPrivKey);
 }
 
 - (void)didReceiveMemoryWarning {

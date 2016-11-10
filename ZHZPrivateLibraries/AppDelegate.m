@@ -8,7 +8,12 @@
 
 #import "AppDelegate.h"
 #import "ZHZRootViewControllerManager.h"
-
+/**
+ *  3D Touch 出发事件
+ */
+#define KCutItem1 @"muBaiDuMap"
+#define KCutItem2 @"MulScroll"
+#define KCutItem3 @"ownPayment"
 
 @interface AppDelegate ()
 
@@ -33,6 +38,48 @@
     [self.window makeKeyWindow];
     NSLog(@"这是iphone7plus测试用的");
     return YES;
+}
+
+
+/**
+  *  手动添加3D touch功能
+  */
+-(void)init3DTouchActionShow:(BOOL)isShow{
+    
+    /** type 该item 唯一标识符
+     localizedTitle ：标题
+     localizedSubtitle：副标题
+     icon：icon图标 可以使用系统类型 也可以使用自定义的图片
+     userInfo：用户信息字典 自定义参数，完成具体功能需求
+     */
+    UIApplication *application = [UIApplication sharedApplication];
+    UIApplicationShortcutIcon *icon1 = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeLove];
+    UIApplicationShortcutItem *item1 = [[UIApplicationShortcutItem alloc]initWithType:KCutItem1 localizedTitle:@"百度地图" localizedSubtitle:@"" icon:icon1 userInfo:nil];
+    
+    UIApplicationShortcutIcon *icon2 = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeShare];
+    UIApplicationShortcutItem *item2 = [[UIApplicationShortcutItem alloc]initWithType:KCutItem2 localizedTitle:@"多视图滚动" localizedSubtitle:@"" icon:icon2 userInfo:nil];
+    
+    UIApplicationShortcutIcon *icon3 = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeCompose];
+    UIApplicationShortcutItem *item3 = [[UIApplicationShortcutItem alloc]initWithType:KCutItem3 localizedTitle:@"个人支付" localizedSubtitle:@"" icon:icon3 userInfo:nil];
+    if (isShow) {
+        application.shortcutItems = @[item1,item2,item3];
+        
+    }else{
+        application.shortcutItems = @[];
+    }
+}
+
+#pragma mark -3Dtouch功能
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void(^)(BOOL succeeded))completionHandler{
+    //判断先前我们设置的唯一标识
+    UIViewController *myVC;
+    if ([shortcutItem.type isEqualToString:@"muBaiDuMap"]) {
+    }else if ([shortcutItem.type isEqualToString:@"MulScroll"]){
+    }else if ([shortcutItem.type isEqualToString:@"ownPayment"]){
+    }
+    //设置当前的VC 为rootVC
+    [self.window.rootViewController presentViewController:myVC animated:YES completion:nil];
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
