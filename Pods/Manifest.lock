@@ -14,6 +14,8 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - AMapNavi (1.4.0)
+  - AMapSearch (3.1.0)
   - DZNEmptyDataSet (1.8.1)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
@@ -47,6 +49,8 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - AMapNavi (~> 1.4.0)
+  - AMapSearch (~> 3.1.0)
   - DZNEmptyDataSet
   - FMDB
   - iCarousel
@@ -69,6 +73,8 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AMapNavi: 096aef30201ca092c40a60f35795ad949824c8d4
+  AMapSearch: aa7621ae8aec9cb8df116710b26e3fe3d09dc0ff
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   iCarousel: 67c8a43da5a46795b56aadfc96cd36a16f6149b2
@@ -90,6 +96,6 @@ SPEC CHECKSUMS:
   XHTagView: 288a6bdd22f48735c9b474902b7e0d9535c537c8
   YYKit: 843d1b26e20b82c695790c9a89907eaa1e99907f
 
-PODFILE CHECKSUM: c4c21ee4edd442df585820c53fa00f62f3b70028
+PODFILE CHECKSUM: e771c729d0012dbd67d7da0d636c8e443ab3da5d
 
 COCOAPODS: 1.1.0.beta.1

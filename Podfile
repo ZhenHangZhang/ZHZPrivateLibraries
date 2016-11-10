@@ -25,7 +25,8 @@ pod 'KMNavigationBarTransition'
 pod 'MMPopupView'
 pod 'pop', '~> 1.0.8'
 pod 'PNChart', '~> 0.8.8'
-
+pod 'AMapSearch', '~> 3.1.0'
+pod 'AMapNavi', '~> 1.4.0'
 
 
 end

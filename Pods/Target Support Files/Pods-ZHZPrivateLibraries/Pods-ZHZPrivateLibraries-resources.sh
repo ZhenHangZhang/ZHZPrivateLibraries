@@ -80,6 +80,8 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "AMapNavi/AMapNaviKit.framework/Versions/1.4.0.a708ac1/Resources/AMap.bundle"
+  install_resource "AMapNavi/AMapNaviKit.framework/Versions/1.4.0.a708ac1/Resources/AMapNavi.bundle"
   install_resource "UMengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_5.2.1/UMSocialSDKResourcesNew.bundle"
   install_resource "UMengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI/TencentOpenApi_IOS_Bundle.bundle"
   install_resource "UMengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/SinaSSO/WeiboSDK.bundle"
@@ -95,6 +97,8 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "UMengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_5.2.1/zh-Hans.lproj"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "AMapNavi/AMapNaviKit.framework/Versions/1.4.0.a708ac1/Resources/AMap.bundle"
+  install_resource "AMapNavi/AMapNaviKit.framework/Versions/1.4.0.a708ac1/Resources/AMapNavi.bundle"
   install_resource "UMengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_5.2.1/UMSocialSDKResourcesNew.bundle"
   install_resource "UMengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI/TencentOpenApi_IOS_Bundle.bundle"
   install_resource "UMengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/SinaSSO/WeiboSDK.bundle"

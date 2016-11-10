@@ -9,6 +9,11 @@
 //#import <YYKit/YYKit.h>
 #ifdef __OBJC__
 
+#pragma mark -高德地图
+#import <AMapSearchKit/AMapSearchKit.h>
+#import <AMapNaviKit/AMapNaviKit.h>
+#import <AMapNaviKit/MAMapKit.h>
+
 #import <pop/POP.h>
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <YYKit/YYKit.h>
@@ -20,8 +25,9 @@
 #import "MagicalRecord.h"
 #import "SVProgressHUD.h"
 #import "HUDHelper.h"
+#import <AFNetworking/AFNetworking.h>
 #import "UIScrollView+EmptyDataSet.h"
-
+#import <Masonry/Masonry.h>
 /*
  * 默认字体可以设置字体大小
  */
