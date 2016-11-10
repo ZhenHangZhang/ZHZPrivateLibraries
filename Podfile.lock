@@ -29,10 +29,16 @@ PODS:
   - MBProgressHUD (0.9.2)
   - MJExtension (3.0.13)
   - MJRefresh (3.1.12)
+  - MMPopupView (1.7.2):
+    - Masonry
+  - PNChart (0.8.9):
+    - UICountingLabel (~> 1.2.0)
+  - pop (1.0.9)
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
   - SVProgressHUD (2.0.3)
+  - UICountingLabel (1.2.0)
   - UMengSocialCOM (5.2.1)
   - XHTagView (2.0)
   - YYKit (1.0.7):
@@ -52,6 +58,9 @@ DEPENDENCIES:
   - MBProgressHUD (~> 0.9.1)
   - MJExtension
   - MJRefresh
+  - MMPopupView
+  - PNChart (~> 0.8.8)
+  - pop (~> 1.0.8)
   - SDWebImage
   - SVProgressHUD
   - UMengSocialCOM
@@ -71,12 +80,16 @@ SPEC CHECKSUMS:
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  MMPopupView: fe1dd010824029dfb632fdf1a531db5dd5386020
+  PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
   UMengSocialCOM: 074c135ce349aa4c8848d3fb8458757bcb6ffb67
   XHTagView: 288a6bdd22f48735c9b474902b7e0d9535c537c8
   YYKit: 843d1b26e20b82c695790c9a89907eaa1e99907f
 
-PODFILE CHECKSUM: 64ed0188ee1f5e519d593b808070fdc973696f2d
+PODFILE CHECKSUM: c4c21ee4edd442df585820c53fa00f62f3b70028
 
 COCOAPODS: 1.1.0.beta.1

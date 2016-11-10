@@ -23,4 +23,9 @@ pod 'IQKeyboardManager', '~> 4.0.1'
 pod 'DZNEmptyDataSet'
 pod 'KMNavigationBarTransition'
 pod 'MMPopupView'
+pod 'pop', '~> 1.0.8'
+pod 'PNChart', '~> 0.8.8'
+
+
+
 end

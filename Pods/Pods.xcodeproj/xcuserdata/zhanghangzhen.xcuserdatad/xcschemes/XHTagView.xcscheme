@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '910E007E980DE9A8E51179A84F6DDE92'
+               BlueprintIdentifier = '877AA9B2BF14BA5A3020EA8A600EC48F'
                BlueprintName = 'XHTagView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'XHTagView.framework'>

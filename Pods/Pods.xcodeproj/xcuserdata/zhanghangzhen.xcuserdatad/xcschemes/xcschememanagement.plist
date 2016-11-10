@@ -49,12 +49,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MMPopupView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MagicalRecord.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Masonry.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PNChart.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -74,6 +84,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>UICountingLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>XHTagView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -89,9 +104,24 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>pop.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>016D982990393D4CF14C8AE7998AEC65</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0B8FBF9ABACF336E1C5A51E9E019C262</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>16FB872D0D2D4BA0F378AB34D47CF95F</key>
 		<dict>
 			<key>primary</key>
@@ -103,6 +133,11 @@
 			<true/>
 		</dict>
 		<key>23CF27B2BA6AC7125EFFEDA8C5AA819F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>26DA36A8A8F15D6B04279CBBAC638640</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -127,27 +162,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>6C18C789438292FED01EB702705FC9AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>7C0126D717EB28DC6DB2EEA2E20B5172</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8351B74DA46052D74491A747DEBEF666</key>
+		<key>7E6EAA94ADD1631F58AEF4E031B07D51</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>910E007E980DE9A8E51179A84F6DDE92</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>977C4248EAF2E67224E2FFA4D03F096A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A31F9FAC363ABBEA08DAA3593F3D0497</key>
+		<key>877AA9B2BF14BA5A3020EA8A600EC48F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -157,17 +187,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>AC07180B8DFBF392352CEAE37F7ED5E0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>AF21780C841830BE5AD3F34076925612</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D58D76EC529B4A92F3E5EDADE0A96661</key>
+		<key>C30F45772398443B357C0F59E62F3B77</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DBACF9D113EE441F896F89CF3C4ADB04</key>
+		<key>D13056DED0A832D7BC46A1A4CE67F9ED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D58D76EC529B4A92F3E5EDADE0A96661</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -329,6 +329,19 @@
 		929830C31DD41B8600EA19D2 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 929830C21DD41B8600EA19D2 /* libc++.tbd */; };
 		929830C51DD41B8D00EA19D2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 929830C41DD41B8D00EA19D2 /* libz.tbd */; };
 		929830C81DD41FF900EA19D2 /* WCPaymentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 929830C71DD41FF900EA19D2 /* WCPaymentModel.m */; };
+		929830CE1DD42E6300EA19D2 /* CXCardContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 929830CB1DD42E6300EA19D2 /* CXCardContainerView.m */; };
+		929830CF1DD42E6300EA19D2 /* CXCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 929830CD1DD42E6300EA19D2 /* CXCardView.m */; };
+		929830D21DD4339900EA19D2 /* ZHZAnimationChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 929830D11DD4339900EA19D2 /* ZHZAnimationChooseView.m */; };
+		929830D61DD437F800EA19D2 /* BlueToothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 929830D41DD437F800EA19D2 /* BlueToothViewController.m */; };
+		929830D71DD437F800EA19D2 /* BlueToothViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 929830D51DD437F800EA19D2 /* BlueToothViewController.xib */; };
+		929830DA1DD4392800EA19D2 /* UIScrollView+ZJEmptyData.m in Sources */ = {isa = PBXBuildFile; fileRef = 929830D91DD4392800EA19D2 /* UIScrollView+ZJEmptyData.m */; };
+		929830DD1DD43AA000EA19D2 /* HUDHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 929830DC1DD43AA000EA19D2 /* HUDHelper.m */; };
+		929830E01DD43D6600EA19D2 /* UIViewController+Swizzing.m in Sources */ = {isa = PBXBuildFile; fileRef = 929830DF1DD43D6600EA19D2 /* UIViewController+Swizzing.m */; };
+		929830E51DD43E3300EA19D2 /* UITableView+LoadAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 929830E21DD43E3200EA19D2 /* UITableView+LoadAnimation.m */; };
+		929830E61DD43E3300EA19D2 /* UIView+PopViewAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 929830E41DD43E3200EA19D2 /* UIView+PopViewAnimation.m */; };
+		929830EB1DD43E7300EA19D2 /* AFNClientHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 929830E81DD43E7300EA19D2 /* AFNClientHelper.m */; };
+		929830EC1DD43E7300EA19D2 /* ZJAnimationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 929830EA1DD43E7300EA19D2 /* ZJAnimationHelper.m */; };
+		929830EF1DD43E9A00EA19D2 /* NSDate+ZJDateFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 929830EE1DD43E9A00EA19D2 /* NSDate+ZJDateFormat.m */; };
 		92A88D931DC6DBC800073366 /* ZHZTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A88D911DC6DBC800073366 /* ZHZTableViewCell.m */; };
 		92A88D941DC6DBC800073366 /* ZHZTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92A88D921DC6DBC800073366 /* ZHZTableViewCell.xib */; };
 		92BE3E3C1DAB89CB00B1058A /* CIImage+SGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BE3E2C1DAB89CA00B1058A /* CIImage+SGExtension.m */; };
@@ -937,6 +950,31 @@
 		929830C41DD41B8D00EA19D2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		929830C61DD41FF900EA19D2 /* WCPaymentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPaymentModel.h; sourceTree = "<group>"; };
 		929830C71DD41FF900EA19D2 /* WCPaymentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPaymentModel.m; sourceTree = "<group>"; };
+		929830CA1DD42E6300EA19D2 /* CXCardContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXCardContainerView.h; sourceTree = "<group>"; };
+		929830CB1DD42E6300EA19D2 /* CXCardContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXCardContainerView.m; sourceTree = "<group>"; };
+		929830CC1DD42E6300EA19D2 /* CXCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXCardView.h; sourceTree = "<group>"; };
+		929830CD1DD42E6300EA19D2 /* CXCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXCardView.m; sourceTree = "<group>"; };
+		929830D01DD4339900EA19D2 /* ZHZAnimationChooseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZAnimationChooseView.h; sourceTree = "<group>"; };
+		929830D11DD4339900EA19D2 /* ZHZAnimationChooseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZAnimationChooseView.m; sourceTree = "<group>"; };
+		929830D31DD437F700EA19D2 /* BlueToothViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueToothViewController.h; sourceTree = "<group>"; };
+		929830D41DD437F800EA19D2 /* BlueToothViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueToothViewController.m; sourceTree = "<group>"; };
+		929830D51DD437F800EA19D2 /* BlueToothViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlueToothViewController.xib; sourceTree = "<group>"; };
+		929830D81DD4392800EA19D2 /* UIScrollView+ZJEmptyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+ZJEmptyData.h"; sourceTree = "<group>"; };
+		929830D91DD4392800EA19D2 /* UIScrollView+ZJEmptyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ZJEmptyData.m"; sourceTree = "<group>"; };
+		929830DB1DD43AA000EA19D2 /* HUDHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDHelper.h; sourceTree = "<group>"; };
+		929830DC1DD43AA000EA19D2 /* HUDHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUDHelper.m; sourceTree = "<group>"; };
+		929830DE1DD43D6600EA19D2 /* UIViewController+Swizzing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzing.h"; sourceTree = "<group>"; };
+		929830DF1DD43D6600EA19D2 /* UIViewController+Swizzing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizzing.m"; sourceTree = "<group>"; };
+		929830E11DD43E3200EA19D2 /* UITableView+LoadAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+LoadAnimation.h"; sourceTree = "<group>"; };
+		929830E21DD43E3200EA19D2 /* UITableView+LoadAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+LoadAnimation.m"; sourceTree = "<group>"; };
+		929830E31DD43E3200EA19D2 /* UIView+PopViewAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PopViewAnimation.h"; sourceTree = "<group>"; };
+		929830E41DD43E3200EA19D2 /* UIView+PopViewAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PopViewAnimation.m"; sourceTree = "<group>"; };
+		929830E71DD43E7300EA19D2 /* AFNClientHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNClientHelper.h; sourceTree = "<group>"; };
+		929830E81DD43E7300EA19D2 /* AFNClientHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNClientHelper.m; sourceTree = "<group>"; };
+		929830E91DD43E7300EA19D2 /* ZJAnimationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJAnimationHelper.h; sourceTree = "<group>"; };
+		929830EA1DD43E7300EA19D2 /* ZJAnimationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJAnimationHelper.m; sourceTree = "<group>"; };
+		929830ED1DD43E9A00EA19D2 /* NSDate+ZJDateFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ZJDateFormat.h"; sourceTree = "<group>"; };
+		929830EE1DD43E9A00EA19D2 /* NSDate+ZJDateFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ZJDateFormat.m"; sourceTree = "<group>"; };
 		92A88D901DC6DBC800073366 /* ZHZTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHZTableViewCell.h; sourceTree = "<group>"; };
 		92A88D911DC6DBC800073366 /* ZHZTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHZTableViewCell.m; sourceTree = "<group>"; };
 		92A88D921DC6DBC800073366 /* ZHZTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHZTableViewCell.xib; sourceTree = "<group>"; };
@@ -1153,6 +1191,9 @@
 				92921A721DBF0B4200A50110 /* ThreeViewController.h */,
 				92921A731DBF0B4200A50110 /* ThreeViewController.m */,
 				92921A741DBF0B4200A50110 /* ThreeViewController.xib */,
+				929830D31DD437F700EA19D2 /* BlueToothViewController.h */,
+				929830D41DD437F800EA19D2 /* BlueToothViewController.m */,
+				929830D51DD437F800EA19D2 /* BlueToothViewController.xib */,
 				9254C1681D7FBF1E003AC816 /* Main.storyboard */,
 				9254C18A1D7FC0DA003AC816 /* ZHZHeader.h */,
 				928EDED81DBDC79F00BD9ADE /* ZHZPrivateLivraries.pch */,
@@ -1186,6 +1227,12 @@
 		9254C1891D7FC04E003AC816 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				929830E71DD43E7300EA19D2 /* AFNClientHelper.h */,
+				929830E81DD43E7300EA19D2 /* AFNClientHelper.m */,
+				929830E91DD43E7300EA19D2 /* ZJAnimationHelper.h */,
+				929830EA1DD43E7300EA19D2 /* ZJAnimationHelper.m */,
+				929830DB1DD43AA000EA19D2 /* HUDHelper.h */,
+				929830DC1DD43AA000EA19D2 /* HUDHelper.m */,
 				92FB06411DC0754000840D2F /* NetWorkingManager.h */,
 				92FB06421DC0754000840D2F /* NetWorkingManager.m */,
 				9254C1861D7FC025003AC816 /* ZHZTools.h */,
@@ -1389,6 +1436,14 @@
 		925A1DA41D825E3500E243C9 /* Category_zhz */ = {
 			isa = PBXGroup;
 			children = (
+				929830ED1DD43E9A00EA19D2 /* NSDate+ZJDateFormat.h */,
+				929830EE1DD43E9A00EA19D2 /* NSDate+ZJDateFormat.m */,
+				929830E11DD43E3200EA19D2 /* UITableView+LoadAnimation.h */,
+				929830E21DD43E3200EA19D2 /* UITableView+LoadAnimation.m */,
+				929830E31DD43E3200EA19D2 /* UIView+PopViewAnimation.h */,
+				929830E41DD43E3200EA19D2 /* UIView+PopViewAnimation.m */,
+				929830D81DD4392800EA19D2 /* UIScrollView+ZJEmptyData.h */,
+				929830D91DD4392800EA19D2 /* UIScrollView+ZJEmptyData.m */,
 				9248A5EE1DD3246A0022294C /* UIColor+CreateMethods.h */,
 				9248A5EF1DD3246A0022294C /* UIColor+CreateMethods.m */,
 				928EDED91DBDCD8000BD9ADE /* Category */,
@@ -1422,6 +1477,8 @@
 				9259404F1D8E5FBA00A01A3B /* UIImage+Addition.m */,
 				925A1DAE1D82A11000E243C9 /* UIImage+ZHZCategory.h */,
 				925A1DAF1D82A11000E243C9 /* UIImage+ZHZCategory.m */,
+				929830DE1DD43D6600EA19D2 /* UIViewController+Swizzing.h */,
+				929830DF1DD43D6600EA19D2 /* UIViewController+Swizzing.m */,
 			);
 			name = Category_zhz;
 			path = Category;
@@ -1430,10 +1487,13 @@
 		925A1DAA1D82A03400E243C9 /* CUSTOMVIEW */ = {
 			isa = PBXGroup;
 			children = (
+				929830C91DD42E6300EA19D2 /* CXCardView */,
 				9248A5F11DD324740022294C /* UIViewEqualizer.h */,
 				9248A5F21DD324740022294C /* UIViewEqualizer.m */,
 				9248A5EB1DD322B50022294C /* MOStoreButton.h */,
 				9248A5EC1DD322B50022294C /* MOStoreButton.m */,
+				929830D01DD4339900EA19D2 /* ZHZAnimationChooseView.h */,
+				929830D11DD4339900EA19D2 /* ZHZAnimationChooseView.m */,
 				92735AC91DCB05CA00CECF09 /* 自定义状态视图 */,
 				92BE3E431DAB8C0800B1058A /* TZDatePicker */,
 				92BE3E471DAB8C0800B1058A /* TZPopInputView */,
@@ -2418,6 +2478,17 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
+		929830C91DD42E6300EA19D2 /* CXCardView */ = {
+			isa = PBXGroup;
+			children = (
+				929830CA1DD42E6300EA19D2 /* CXCardContainerView.h */,
+				929830CB1DD42E6300EA19D2 /* CXCardContainerView.m */,
+				929830CC1DD42E6300EA19D2 /* CXCardView.h */,
+				929830CD1DD42E6300EA19D2 /* CXCardView.m */,
+			);
+			path = CXCardView;
+			sourceTree = "<group>";
+		};
 		92BE3E291DAB89CA00B1058A /* SGQRCode */ = {
 			isa = PBXGroup;
 			children = (
@@ -2766,6 +2837,7 @@
 				928435BB1D9E144E00F80526 /* DazSmoke.png in Resources */,
 				929830AF1DD41B1000EA19D2 /* read_me.txt in Resources */,
 				925AC8FE1DAB890B001A0DCE /* Assets.xcassets in Resources */,
+				929830D71DD437F800EA19D2 /* BlueToothViewController.xib in Resources */,
 				9285981B1DC1AC4D003173BA /* 123.png in Resources */,
 				9294942E1D86934400CE1E74 /* Contents.json in Resources */,
 				929494061D86934400CE1E74 /* Contents.json in Resources */,
@@ -2915,9 +2987,11 @@
 				9255CA961D814D1C006A6A24 /* ZHZBaseNavViewController.m in Sources */,
 				927B3BB31DD05BD100727172 /* EncryptionVC.m in Sources */,
 				929494691D86A4C800CE1E74 /* qrinput.c in Sources */,
+				929830E51DD43E3300EA19D2 /* UITableView+LoadAnimation.m in Sources */,
 				9244FB791D9A48BF006E6987 /* MainViewController.m in Sources */,
 				928EDED71DBDC72E00BD9ADE /* BaseViewController.m in Sources */,
 				929830B71DD41B1000EA19D2 /* DataSigner.m in Sources */,
+				929830E61DD43E3300EA19D2 /* UIView+PopViewAnimation.m in Sources */,
 				925C820A1DB0910C00DB9D8E /* NSDateComponents+DealDate.m in Sources */,
 				925A1DC51D82B68500E243C9 /* ZHZPregressButton.m in Sources */,
 				929830AC1DD41B1000EA19D2 /* payRequsestHandler.mm in Sources */,
@@ -2965,6 +3039,7 @@
 				925940231D8E3C0F00A01A3B /* ZHZBaseViewController.m in Sources */,
 				92FB064A1DC07FA800840D2F /* CustomSearch.m in Sources */,
 				927B3BAF1DD0584B00727172 /* NSString+Encryption.m in Sources */,
+				929830EC1DD43E7300EA19D2 /* ZJAnimationHelper.m in Sources */,
 				929494651D86A4C800CE1E74 /* QRCScannerViewController.m in Sources */,
 				9248A5EA1DD31D910022294C /* SGGraphics.m in Sources */,
 				925C820C1DB0910C00DB9D8E /* UIView+FRAME.m in Sources */,
@@ -2976,9 +3051,11 @@
 				925940321D8E5B1F00A01A3B /* NSObject+Runtime.m in Sources */,
 				928435BF1D9E166700F80526 /* ZHZBorderView.m in Sources */,
 				927D59191DC8477600A67958 /* ZHZCustomFollowLayout.m in Sources */,
+				929830E01DD43D6600EA19D2 /* UIViewController+Swizzing.m in Sources */,
 				9259408E1D8E987E00A01A3B /* UIView+Layout.m in Sources */,
 				92BE3E3D1DAB89CB00B1058A /* ScanSuccessJumpVC.m in Sources */,
 				926EBD661D87E29C003AA841 /* ZHZImageScrollViewLoop.m in Sources */,
+				929830EF1DD43E9A00EA19D2 /* NSDate+ZJDateFormat.m in Sources */,
 				9254C18E1D7FE4CD003AC816 /* ZHZDataCache.m in Sources */,
 				92FB06691DC0ADEB00840D2F /* YQCalendarEachDay.m in Sources */,
 				928D62D91DADD7D0008906DA /* ZHZBackGroundAnimatedImagesView.m in Sources */,
@@ -3026,6 +3103,7 @@
 				9294946A1D86A4C800CE1E74 /* qrspec.c in Sources */,
 				928598421DC1AC4D003173BA /* RTCView.m in Sources */,
 				925A1DA71D825E8B00E243C9 /* UIView+Categroy.m in Sources */,
+				929830DA1DD4392800EA19D2 /* UIScrollView+ZJEmptyData.m in Sources */,
 				9254C19A1D7FE967003AC816 /* ZHZ_GCD.m in Sources */,
 				9254C1AE1D80058A003AC816 /* ZHZInfoGuidScrollView.m in Sources */,
 				927B3BAD1DD0584B00727172 /* CocoaSecurity.m in Sources */,
@@ -3042,12 +3120,16 @@
 				925A1DBA1D82AB7100E243C9 /* ZHZRootViewControllerManager.m in Sources */,
 				9255CA9F1D815498006A6A24 /* ZHZAlertController.m in Sources */,
 				9254C1A81D80051B003AC816 /* ZHZInfoPage.m in Sources */,
+				929830CE1DD42E6300EA19D2 /* CXCardContainerView.m in Sources */,
+				929830D61DD437F800EA19D2 /* BlueToothViewController.m in Sources */,
+				929830DD1DD43AA000EA19D2 /* HUDHelper.m in Sources */,
 				929830AD1DD41B1000EA19D2 /* WXUtil.mm in Sources */,
 				928EDEEF1DBDCD8000BD9ADE /* UIAlertView+CallBack.m in Sources */,
 				92BE3E4F1DAB8C0800B1058A /* TZDatePickerView.m in Sources */,
 				928EDEF21DBDCD8000BD9ADE /* UIButton+Block.m in Sources */,
 				925940591D8E60E200A01A3B /* ZHZCustomPlaceHolderTextView.m in Sources */,
 				925940861D8E987E00A01A3B /* TZAssetModel.m in Sources */,
+				929830CF1DD42E6300EA19D2 /* CXCardView.m in Sources */,
 				928EDEF01DBDCD8000BD9ADE /* UIBarButtonItem+Badge.m in Sources */,
 				92921A751DBF0B4200A50110 /* ThreeViewController.m in Sources */,
 				9273ABB91DACE9FF00468C31 /* ZHZTxtViewController.m in Sources */,
@@ -3066,10 +3148,12 @@
 				92FB06551DC08E5B00840D2F /* AsyncSocket.m in Sources */,
 				925940291D8E3E2500A01A3B /* ZHZCustomLoadingAnimationView.m in Sources */,
 				9248A5E91DD31D910022294C /* MD5Util.m in Sources */,
+				929830D21DD4339900EA19D2 /* ZHZAnimationChooseView.m in Sources */,
 				92FB063D1DC0750B00840D2F /* UIImage+Compression.m in Sources */,
 				92A88D931DC6DBC800073366 /* ZHZTableViewCell.m in Sources */,
 				927B3BAE1DD0584B00727172 /* NSString+Hash.m in Sources */,
 				92FE1CBA1D91065900B6A1AC /* OneViewController.m in Sources */,
+				929830EB1DD43E7300EA19D2 /* AFNClientHelper.m in Sources */,
 				9248A5F01DD3246A0022294C /* UIColor+CreateMethods.m in Sources */,
 				925A1DB01D82A11000E243C9 /* UIImage+ZHZCategory.m in Sources */,
 				9259406D1D8E7C3600A01A3B /* ZHZCustomTableView.m in Sources */,
