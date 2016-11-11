@@ -366,7 +366,6 @@
 		929831341DD4652300EA19D2 /* AppleSystemService.m in Sources */ = {isa = PBXBuildFile; fileRef = 929831331DD4652300EA19D2 /* AppleSystemService.m */; };
 		929831371DD4655200EA19D2 /* CAGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 929831361DD4655200EA19D2 /* CAGradientView.m */; };
 		9298313A1DD465DC00EA19D2 /* CalendarEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 929831391DD465DC00EA19D2 /* CalendarEvent.m */; };
-		9298313E1DD4664500EA19D2 /* CalendarEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9298313D1DD4664500EA19D2 /* CalendarEvent.m */; };
 		929831431DD4666E00EA19D2 /* EdgeInsetsLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 929831401DD4666E00EA19D2 /* EdgeInsetsLabel.m */; };
 		929831441DD4666E00EA19D2 /* IconEdgeInsetsLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 929831421DD4666E00EA19D2 /* IconEdgeInsetsLabel.m */; };
 		92A88D931DC6DBC800073366 /* ZHZTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A88D911DC6DBC800073366 /* ZHZTableViewCell.m */; };
@@ -1045,8 +1044,6 @@
 		929831361DD4655200EA19D2 /* CAGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAGradientView.m; sourceTree = "<group>"; };
 		929831381DD465DC00EA19D2 /* CalendarEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarEvent.h; sourceTree = "<group>"; };
 		929831391DD465DC00EA19D2 /* CalendarEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarEvent.m; sourceTree = "<group>"; };
-		9298313C1DD4664500EA19D2 /* CalendarEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarEvent.h; sourceTree = "<group>"; };
-		9298313D1DD4664500EA19D2 /* CalendarEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarEvent.m; sourceTree = "<group>"; };
 		9298313F1DD4666E00EA19D2 /* EdgeInsetsLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdgeInsetsLabel.h; sourceTree = "<group>"; };
 		929831401DD4666E00EA19D2 /* EdgeInsetsLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EdgeInsetsLabel.m; sourceTree = "<group>"; };
 		929831411DD4666E00EA19D2 /* IconEdgeInsetsLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconEdgeInsetsLabel.h; sourceTree = "<group>"; };
@@ -2682,8 +2679,6 @@
 				929831401DD4666E00EA19D2 /* EdgeInsetsLabel.m */,
 				929831411DD4666E00EA19D2 /* IconEdgeInsetsLabel.h */,
 				929831421DD4666E00EA19D2 /* IconEdgeInsetsLabel.m */,
-				9298313C1DD4664500EA19D2 /* CalendarEvent.h */,
-				9298313D1DD4664500EA19D2 /* CalendarEvent.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -3247,7 +3242,6 @@
 				92FE1CBF1D91066700B6A1AC /* TwoViewController.m in Sources */,
 				92BE3E3F1DAB89CB00B1058A /* SGScanningQRCodeVC.m in Sources */,
 				925940231D8E3C0F00A01A3B /* ZHZBaseViewController.m in Sources */,
-				9298313E1DD4664500EA19D2 /* CalendarEvent.m in Sources */,
 				92FB064A1DC07FA800840D2F /* CustomSearch.m in Sources */,
 				927B3BAF1DD0584B00727172 /* NSString+Encryption.m in Sources */,
 				929830EC1DD43E7300EA19D2 /* ZJAnimationHelper.m in Sources */,

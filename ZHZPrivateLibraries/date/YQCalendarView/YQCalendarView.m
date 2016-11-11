@@ -4,9 +4,7 @@
 //
 //  Created by problemchild on 16/8/22.
 //  Copyright © 2016年 ProblenChild. All rights reserved.
-//
-#define kScreenWidth  [UIScreen mainScreen].bounds.size.width
-#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+ 
 #define kScreenScaleWidthWith6(x)   (kScreenWidth/375 * x)
 #define kScreenScaleHeightWith6(x)  (kScreenHeight/667 * x)
 #define kViewWidth(v)            v.frame.size.width

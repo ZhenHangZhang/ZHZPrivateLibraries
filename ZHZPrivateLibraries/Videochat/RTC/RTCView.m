@@ -36,7 +36,7 @@ NSString *const kVideoCaptureNotification = @"kVideoCaptureNotification";
 // 视频聊天时，小窗口的高
 #define kMicVideoH      (120 * kRTCRate)
 
-@interface RTCView ()
+@interface RTCView ()<CAAnimationDelegate>
 
 /** 是否是视频聊天 */
 @property (assign, nonatomic)   BOOL                    isVideo;

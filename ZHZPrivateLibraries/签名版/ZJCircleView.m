@@ -17,11 +17,7 @@
 
 @implementation ZJCircleView
 
--(void)awakeFromNib{
-    
-    
-    
-}
+ 
 
 - (instancetype)initWithCoder:(NSCoder *)coder
 {

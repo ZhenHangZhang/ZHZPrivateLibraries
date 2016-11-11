@@ -62,10 +62,10 @@
     NSInteger section = indexPath.section;
     NSInteger rowNumber = [self numberOfRowsInSection:section];
     if (indexPath.section + 1 > sectionNumber || indexPath.section < 0) { // section 越界
-        NSLog(@"刷新section: %ld 已经越界, 总组数: %ld", indexPath.section, sectionNumber);
+        NSLog(@"刷新section: %ld 已经越界, 总组数: %ld", (long)indexPath.section, (long)sectionNumber);
         return nil;
     } else if (indexPath.row + 1 > rowNumber || indexPath.row < 0) { // row 越界
-        NSLog(@"刷新row: %ld 已经越界, 总行数: %ld 所在section: %ld", indexPath.row, rowNumber, section);
+        NSLog(@"刷新row: %ld 已经越界, 总行数: %ld 所在section: %ld", (long)indexPath.row, (long)rowNumber, (long)section);
         return nil;
     }
     return [self cellForRowAtIndexPath:indexPath];
@@ -80,9 +80,9 @@
     NSInteger section = indexPath.section;
     NSInteger rowNumber = [self numberOfRowsInSection:section];
     if (indexPath.section + 1 > sectionNumber || indexPath.section < 0) { // section 越界
-        NSLog(@"刷新section: %ld 已经越界, 总组数: %ld", indexPath.section, sectionNumber);
+        NSLog(@"刷新section: %ld 已经越界, 总组数: %ld", (long)indexPath.section, (long)sectionNumber);
     } else if (indexPath.row + 1 > rowNumber || indexPath.row < 0) { // row 越界
-        NSLog(@"刷新row: %ld 已经越界, 总行数: %ld 所在section: %ld", indexPath.row, rowNumber, section);
+        NSLog(@"刷新row: %ld 已经越界, 总行数: %ld 所在section: %ld", (long)indexPath.row, (long)rowNumber, (long)section);
     } else {
         [self beginUpdates];
         [self reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:(UITableViewRowAnimation)animation];
@@ -111,7 +111,7 @@
 - (void)ZHZ_reloadSingleSection:(NSInteger)section animation:(ZHZBaseTableViewRowAnimation)animation {
     NSInteger sectionNumber = self.numberOfSections;
     if (section + 1 > sectionNumber || section < 0) { // section越界
-        NSLog(@"刷新section: %ld 已经越界, 总组数: %ld", section, sectionNumber);
+        NSLog(@"刷新section: %ld 已经越界, 总组数: %ld", (long)section, (long)sectionNumber);
     } else {
         [self beginUpdates];
         [self reloadSections:[NSIndexSet indexSetWithIndex:section] withRowAnimation:(UITableViewRowAnimation)animation];
@@ -143,11 +143,11 @@
     NSInteger section = indexPath.section;
     NSInteger rowNumber = [self numberOfRowsInSection:section];
     
-    NSLog(@"sectionNumber %ld  section%ld rowNumber%ld",sectionNumber, section , rowNumber);
+    NSLog(@"sectionNumber %ld  section%ld rowNumber%ld",(long)sectionNumber, (long)section , (long)rowNumber);
     if (indexPath.section + 1 > sectionNumber || indexPath.section < 0) { // section 越界
-        NSLog(@"删除section: %ld 已经越界, 总组数: %ld", indexPath.section, sectionNumber);
+        NSLog(@"删除section: %ld 已经越界, 总组数: %ld", (long)indexPath.section, (long)sectionNumber);
     } else if (indexPath.row + 1 > rowNumber || indexPath.row < 0) { // row 越界
-        NSLog(@"删除row: %ld 已经越界, 总行数: %ld 所在section: %ld", indexPath.row, rowNumber, section);
+        NSLog(@"删除row: %ld 已经越界, 总行数: %ld 所在section: %ld", (long)indexPath.row, (long)rowNumber, (long)section);
     } else {
         [self beginUpdates];
         [self deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:(UITableViewRowAnimation)animation];
@@ -177,7 +177,7 @@
 - (void)ZHZ_deleteSingleSection:(NSInteger)section animation:(ZHZBaseTableViewRowAnimation)animation {
     NSInteger sectionNumber = self.numberOfSections;
     if (section + 1 > sectionNumber || section < 0) { // section 越界
-        NSLog(@"刷新section: %ld 已经越界, 总组数: %ld", section, sectionNumber);
+        NSLog(@"刷新section: %ld 已经越界, 总组数: %ld", (long)section, (long)sectionNumber);
     } else {
         [self beginUpdates];
         [self deleteSections:[NSIndexSet indexSetWithIndex:section] withRowAnimation:(UITableViewRowAnimation)animation];
@@ -212,9 +212,9 @@
     NSInteger rowNumber = [self numberOfRowsInSection:section];
     if (section > sectionNumber || section < 0) {
         // section 越界
-        NSLog(@"section 越界 : %ld", section);
+        NSLog(@"section 越界 : %ld", (long)section);
     } else if (row > rowNumber || row < 0) {
-        NSLog(@"row 越界 : %ld", row);
+        NSLog(@"row 越界 : %ld", (long)row);
     } else {
         [self beginUpdates];
         [self insertRowsAtIndexPaths:@[indexPath] withRowAnimation:(UITableViewRowAnimation)animation];
@@ -232,7 +232,7 @@
     NSInteger sectionNumber = self.numberOfSections;
     if (section + 1 > sectionNumber || section < 0) {
         // section越界
-        NSLog(@" section 越界 : %ld", section);
+        NSLog(@" section 越界 : %ld", (long)section);
     } else {
         [self beginUpdates];
         [self insertSections:[NSIndexSet indexSetWithIndex:section] withRowAnimation:(UITableViewRowAnimation)animation];

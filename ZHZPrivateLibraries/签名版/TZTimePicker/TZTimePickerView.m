@@ -138,7 +138,7 @@
     [self refreshTimeBtnEnable];
     [self refrshLastAndNextBtnEnable];
     [self refreshTitleLable];
-    
+    [super awakeFromNib];
 }
 
 /** 设置每个按钮Disabled状态的标题颜色和背景图片 */

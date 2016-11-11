@@ -13,11 +13,7 @@
 #define kCommonBgColor [UIColor colorWithRed:0.86f green:0.85f blue:0.80f alpha:1.00f]
 
 #define kFont(size) [UIFont systemFontOfSize:size]
-
-/***  当前屏幕宽度 */
-#define kScreenWidth  [[UIScreen mainScreen] bounds].size.width
-/***  当前屏幕高度 */
-#define kScreenHeight  [[UIScreen mainScreen] bounds].size.height
+ 
 
 @interface ZHZCustomNoNetworkView ()
 

@@ -9,10 +9,7 @@
 #import "ZHZWkWebViewController.h"
 #import <WebKit/WebKit.h>
 
-/***  当前屏幕宽度 */
-#define kScreenWidth  [[UIScreen mainScreen] bounds].size.width
-/***  当前屏幕高度 */
-#define kScreenHeight  [[UIScreen mainScreen] bounds].size.height
+ 
 
 
 @interface ZHZWkWebViewController ()<WKNavigationDelegate, WKUIDelegate>

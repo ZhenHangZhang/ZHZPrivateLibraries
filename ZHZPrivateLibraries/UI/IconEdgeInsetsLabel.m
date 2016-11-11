@@ -7,7 +7,7 @@
 //
 
 #import "IconEdgeInsetsLabel.h"
-#import "UIView+SetRect.h"
+#import "UIView+Frame.h"
 
 @interface IconEdgeInsetsLabel ()
 
@@ -42,13 +42,13 @@
         if (self.direction == kIconAtLeft) {
 
             _iconView.left    = insets.left;
-            _iconView.centerY = self.middleY;
+            _iconView.centerY = self.centerY;
             insets = UIEdgeInsetsMake(insets.top, insets.left + _gap + _iconView.frame.size.width, insets.bottom, insets.right);
             
         } else if (self.direction == kIconAtRight) {
         
             _iconView.right   = self.width - insets.right;
-            _iconView.centerY = self.middleY;
+            _iconView.centerY = self.centerY;
             insets = UIEdgeInsetsMake(insets.top, insets.left, insets.bottom, insets.right  + _gap + _iconView.frame.size.width);
         }
     }

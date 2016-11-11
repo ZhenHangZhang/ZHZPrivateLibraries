@@ -214,6 +214,7 @@
 
 -(void)awakeFromNib{
     [self setup];
+    [super awakeFromNib];
 }
 
 

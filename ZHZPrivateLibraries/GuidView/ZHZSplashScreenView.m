@@ -87,7 +87,7 @@
 - (void)showSplashScreenWithTime:(NSInteger)ADShowTime
 {
     _ADShowTime = ADShowTime;
-    [_countButton setTitle:[NSString stringWithFormat:@"跳过%ld",ADShowTime] forState:UIControlStateNormal];
+    [_countButton setTitle:[NSString stringWithFormat:@"跳过%ld",(long)ADShowTime] forState:UIControlStateNormal];
     //
     
     NSDateFormatter *dataFormatter = [[NSDateFormatter alloc] init];

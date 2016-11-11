@@ -128,21 +128,21 @@
         NSArray *array = self.chooseDateArray[i];
         
         for (NSDate *date in array) {
-            NSString *year = [NSString stringWithFormat:@"%ld", [NSDateComponents year:date]];
+            NSString *year = [NSString stringWithFormat:@"%ld", (long)[NSDateComponents year:date]];
             NSDictionary *yearDict = self.chooseDateDict[year];
             if (!yearDict) {
                 yearDict = [NSMutableDictionary dictionary];
                 [self.chooseDateDict setValue:yearDict forKey:year];
             }
             
-            NSString *month = [NSString stringWithFormat:@"%ld", [NSDateComponents month:date]];
+            NSString *month = [NSString stringWithFormat:@"%ld", (long)[NSDateComponents month:date]];
             NSDictionary *monthDict = yearDict[month];
             if (!monthDict) {
                 monthDict = [NSMutableDictionary dictionary];
                 [yearDict setValue:monthDict forKey:month];
             }
             
-            NSString *day = [NSString stringWithFormat:@"%ld", [NSDateComponents day:date]];
+            NSString *day = [NSString stringWithFormat:@"%ld", (long)[NSDateComponents day:date]];
             NSDictionary *dayDict = monthDict[day];
             if (!dayDict) {
                 dayDict = [NSMutableDictionary dictionary];
@@ -249,7 +249,7 @@
     
     [self judgeButtonStatus];
     
-    [self.dateButton setTitle:[NSString stringWithFormat:@"%ld-%.2ld",[NSDateComponents year:self.currentDate],(long)[NSDateComponents month:self.currentDate]] forState:UIControlStateNormal];
+    [self.dateButton setTitle:[NSString stringWithFormat:@"%ld-%.2ld",(long)[NSDateComponents year:self.currentDate],(long)[NSDateComponents month:self.currentDate]] forState:UIControlStateNormal];
     [_collectionView reloadData];
 }
 
@@ -311,13 +311,13 @@
         [cell.dateLabel setText:@""];
     } else {
         day = i - firstWeekday + 1;
-        [cell.dateLabel setText:[NSString stringWithFormat:@"%ld",day]];
+        [cell.dateLabel setText:[NSString stringWithFormat:@"%ld",(long)day]];
         
         // 优先判定是否是选择模式下
-        NSString *year = [NSString stringWithFormat:@"%ld", [NSDateComponents year:self.currentDate]];
-        NSString *month = [NSString stringWithFormat:@"%ld", [NSDateComponents month:self.currentDate]];
-        NSDate *todayDate = [NSDateComponents dateWithSlashFromStr:[NSString stringWithFormat:@"%@-%@-%@", year, month, [NSString stringWithFormat:@"%ld", day]]];
-        NSDictionary *dayDict = [self.chooseDateDict valueForKeyPath:[NSString stringWithFormat:@"%@.%@.%@", year, month, [NSString stringWithFormat:@"%ld", day]]];
+        NSString *year = [NSString stringWithFormat:@"%ld", (long)[NSDateComponents year:self.currentDate]];
+        NSString *month = [NSString stringWithFormat:@"%ld", (long)[NSDateComponents month:self.currentDate]];
+        NSDate *todayDate = [NSDateComponents dateWithSlashFromStr:[NSString stringWithFormat:@"%@-%@-%@", year, month, [NSString stringWithFormat:@"%ld", (long)day]]];
+        NSDictionary *dayDict = [self.chooseDateDict valueForKeyPath:[NSString stringWithFormat:@"%@.%@.%@", year, month, [NSString stringWithFormat:@"%ld", (long)day]]];
         if (dayDict) {
             [cell.dateLabel setTextColor:[UIColor whiteColor]];
             cell.dateLabel.backgroundColor = dayDict[kCellColor];
@@ -340,8 +340,8 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     __block CalendarCell *cell = (CalendarCell *)[collectionView cellForItemAtIndexPath:indexPath];
     NSString *day = cell.dateLabel.text;
-    NSString *year = [NSString stringWithFormat:@"%ld", [NSDateComponents year:self.currentDate]];
-    NSString *month = [NSString stringWithFormat:@"%ld", [NSDateComponents month:self.currentDate]];
+    NSString *year = [NSString stringWithFormat:@"%ld", (long)[NSDateComponents year:self.currentDate]];
+    NSString *month = [NSString stringWithFormat:@"%ld", (long)[NSDateComponents month:self.currentDate]];
     __block NSDate *todayDate = [NSDateComponents dateWithSlashFromStr:[NSString stringWithFormat:@"%@-%@-%@", year, month, day]];
     if ([self.delegate respondsToSelector:@selector(calendarPicker:DidChooseDate:withStatus:)]) {
         [self.delegate calendarPicker:self DidChooseDate:todayDate withStatus:cell.tag];

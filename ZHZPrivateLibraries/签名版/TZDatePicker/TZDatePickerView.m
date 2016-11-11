@@ -101,6 +101,7 @@
     self.okBtnToSrceenOrder.enabled = NO;
     self.okBtnToSrceenOrder.layer.cornerRadius = 3;
     self.okBtnToSrceenOrder.clipsToBounds = YES;
+    [super awakeFromNib];
 }
 
 /** 选择开始时间 */

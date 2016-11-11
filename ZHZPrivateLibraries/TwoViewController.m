@@ -175,7 +175,7 @@ static NSString * XHLCellId = @"cellId";
 
 
 - (void)calendarPicker:(CalendarPicker *)calendarPicker DidChooseDate:(NSDate *)chooseDate withStatus:(NSInteger)status {
-    NSLog(@"%@-%ld", chooseDate, status);
+    NSLog(@"%@-%ld", chooseDate, (long)status);
 }
 
  

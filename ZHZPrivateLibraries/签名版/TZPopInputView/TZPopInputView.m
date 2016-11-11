@@ -71,6 +71,8 @@
     
     [self.okButton setBackgroundImage:[self createImageWithColor:mGrayColor] forState:UIControlStateDisabled];
     self.okButton.enabled = NO;
+    [super awakeFromNib];
+
 }
 
 - (UIView *)bgView {
