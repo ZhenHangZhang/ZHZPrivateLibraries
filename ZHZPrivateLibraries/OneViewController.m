@@ -23,6 +23,8 @@
 #import <PNChart/PNChart.h>
 
 #import "ZHZAnimationChooseView.h"
+#import <Realm/Realm.h>
+#import "Car.h"
 
 //设备物理尺寸
 #define screen_width [UIScreen mainScreen].bounds.size.width
@@ -63,9 +65,37 @@ static  NSString* fourCellid = @"fourCellid";
 
 @implementation OneViewController
 
+-(void)realmData{
+
+    RLMRealmConfiguration *config = [RLMRealmConfiguration defaultConfiguration];
+    config.schemaVersion = 4;
+    config.migrationBlock = ^(RLMMigration *migration, uint64_t oldSchemaVersion)
+    {
+        // enumerateObjects:block: 遍历了存储在 Realm 文件中的每一个“Person”对象
+        [migration enumerateObjects:Car.className block:^(RLMObject *oldObject, RLMObject *newObject) {
+            // 只有当 Realm 数据库的架构版本为 0 的时候，才添加 “fullName” 属性
+            if (oldSchemaVersion < 1) {
+                newObject[@"fullName"] = [NSString stringWithFormat:@"%@ %@", oldObject[@"firstName"], oldObject[@"lastName"]];
+            }
+            // 只有当 Realm 数据库的架构版本为 0 或者 1 的时候，才添加“email”属性
+            if (oldSchemaVersion < 2) {
+                newObject[@"email"] = @"";
+            }
+            // 替换属性名
+            if (oldSchemaVersion < 3) { // 重命名操作应该在调用 `enumerateObjects:` 之外完成
+                [migration renamePropertyForClass:Car.className oldName:@"yearsSinceBirth" newName:@"age"]; }
+        }];
+    };
+    [RLMRealmConfiguration setDefaultConfiguration:config];
+    // 现在我们已经成功更新了架构版本并且提供了迁移闭包，打开旧有的 Realm 数据库会自动执行此数据迁移，然后成功进行访问
+    [RLMRealm defaultRealm];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    
+    [self realmData];
+    
     UIView *bg = [[UIView alloc] initWithFrame:CGRectMake(0, -20, self.navigationController.navigationBar.frame.size.width, 64)];
     bg.backgroundColor = [UIColor colorWithWhite:0 alpha:1];
     
@@ -384,22 +414,23 @@ static  NSString* fourCellid = @"fourCellid";
 -(void)userClickedOnLinePoint:(CGPoint)point lineIndex:(NSInteger)lineIndex{
     NSLog(@"Click on line %f, %f, line index is %d",point.x, point.y, (int)lineIndex);
 }
-
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-
     return 20;
 }
-
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-
     return 60;
 }
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-
     ZHZTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:firseCellid];
+    
     if (!cell) {
         cell = [[ZHZTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:firseCellid];
+        UILabel *lab = [UILabel new];
+        lab.tag = 100;
+        [cell.contentView addSubview:lab];
     }
+    UILabel *label = [cell.contentView viewWithTag:100];
+    label.text = @"蛋疼的复用问题";
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

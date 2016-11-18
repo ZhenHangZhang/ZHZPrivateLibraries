@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		510EE60CB19C4849371CE495 /* Pods_ZHZPrivateLibraries.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 561D76EF5CF6563F422ECBF5 /* Pods_ZHZPrivateLibraries.framework */; };
+		9233F8B81DDEC9D400294144 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 9233F8B71DDEC9D400294144 /* Car.m */; };
+		9233F8BB1DDECDCA00294144 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 9233F8BA1DDECDCA00294144 /* Person.m */; };
 		9244FB701D9A107E006E6987 /* UILabel+Wonderful.m in Sources */ = {isa = PBXBuildFile; fileRef = 9244FB6F1D9A107E006E6987 /* UILabel+Wonderful.m */; };
 		9244FB791D9A48BF006E6987 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9244FB781D9A48BF006E6987 /* MainViewController.m */; };
 		9244FB7C1D9A565C006E6987 /* ZHZDownDataWithYYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9244FB7B1D9A565C006E6987 /* ZHZDownDataWithYYCache.m */; };
@@ -424,6 +426,10 @@
 
 /* Begin PBXFileReference section */
 		561D76EF5CF6563F422ECBF5 /* Pods_ZHZPrivateLibraries.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZHZPrivateLibraries.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9233F8B61DDEC9D400294144 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		9233F8B71DDEC9D400294144 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		9233F8B91DDECDCA00294144 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		9233F8BA1DDECDCA00294144 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		9244FB6E1D9A107E006E6987 /* UILabel+Wonderful.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Wonderful.h"; sourceTree = "<group>"; };
 		9244FB6F1D9A107E006E6987 /* UILabel+Wonderful.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Wonderful.m"; sourceTree = "<group>"; };
 		9244FB771D9A48BF006E6987 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -1274,6 +1280,10 @@
 				92921A741DBF0B4200A50110 /* ThreeViewController.xib */,
 				929830D31DD437F700EA19D2 /* BlueToothViewController.h */,
 				929830D41DD437F800EA19D2 /* BlueToothViewController.m */,
+				9233F8B61DDEC9D400294144 /* Car.h */,
+				9233F8B71DDEC9D400294144 /* Car.m */,
+				9233F8B91DDECDCA00294144 /* Person.h */,
+				9233F8BA1DDECDCA00294144 /* Person.m */,
 				929830D51DD437F800EA19D2 /* BlueToothViewController.xib */,
 				9254C1681D7FBF1E003AC816 /* Main.storyboard */,
 				9254C18A1D7FC0DA003AC816 /* ZHZHeader.h */,
@@ -3329,6 +3339,7 @@
 				925940621D8E64B100A01A3B /* ZHZUtils.m in Sources */,
 				929831141DD4416700EA19D2 /* ZJCustomeSegment.m in Sources */,
 				925A1DBA1D82AB7100E243C9 /* ZHZRootViewControllerManager.m in Sources */,
+				9233F8B81DDEC9D400294144 /* Car.m in Sources */,
 				9255CA9F1D815498006A6A24 /* ZHZAlertController.m in Sources */,
 				9298313A1DD465DC00EA19D2 /* CalendarEvent.m in Sources */,
 				9254C1A81D80051B003AC816 /* ZHZInfoPage.m in Sources */,
@@ -3372,6 +3383,7 @@
 				927B3BAE1DD0584B00727172 /* NSString+Hash.m in Sources */,
 				92FE1CBA1D91065900B6A1AC /* OneViewController.m in Sources */,
 				929830EB1DD43E7300EA19D2 /* AFNClientHelper.m in Sources */,
+				9233F8BB1DDECDCA00294144 /* Person.m in Sources */,
 				9248A5F01DD3246A0022294C /* UIColor+CreateMethods.m in Sources */,
 				925A1DB01D82A11000E243C9 /* UIImage+ZHZCategory.m in Sources */,
 				9259406D1D8E7C3600A01A3B /* ZHZCustomTableView.m in Sources */,

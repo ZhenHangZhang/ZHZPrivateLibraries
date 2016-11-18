@@ -36,6 +36,9 @@ PODS:
   - PNChart (0.8.9):
     - UICountingLabel (~> 1.2.0)
   - pop (1.0.9)
+  - Realm (1.0.2):
+    - Realm/Headers (= 1.0.2)
+  - Realm/Headers (1.0.2)
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
@@ -65,6 +68,7 @@ DEPENDENCIES:
   - MMPopupView
   - PNChart (~> 0.8.8)
   - pop (~> 1.0.8)
+  - Realm
   - SDWebImage
   - SVProgressHUD
   - UMengSocialCOM
@@ -89,6 +93,7 @@ SPEC CHECKSUMS:
   MMPopupView: fe1dd010824029dfb632fdf1a531db5dd5386020
   PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  Realm: 9d5c46a4d7d27958530a8dfc58f63a99e5c2cba3
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
@@ -96,6 +101,6 @@ SPEC CHECKSUMS:
   XHTagView: 288a6bdd22f48735c9b474902b7e0d9535c537c8
   YYKit: 843d1b26e20b82c695790c9a89907eaa1e99907f
 
-PODFILE CHECKSUM: e771c729d0012dbd67d7da0d636c8e443ab3da5d
+PODFILE CHECKSUM: 0e54ed3cb1cf931ba50807136d63ea33ebdfd330
 
 COCOAPODS: 1.1.0.beta.1

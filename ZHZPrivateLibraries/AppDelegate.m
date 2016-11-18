@@ -55,7 +55,7 @@
     [[IQKeyboardManager sharedManager] setEnable:YES];
     [[IQKeyboardManager sharedManager] setEnableAutoToolbar:YES];
 
-    [MagicalRecord setupCoreDataStackWithStoreNamed:@"Person.sqlite"];
+//    [MagicalRecord setupCoreDataStackWithStoreNamed:@"Person.sqlite"];
     
     NSLog(@"垃圾git客户端竟然不显示");
     NSLog(@"是否是通过Schemes打开的%@",launchOptions);
